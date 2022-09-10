@@ -22,7 +22,8 @@ extension ViewController : TableViewConfig {
   }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController {
-      self.navigationController!.pushViewController(vc, animated: true)
+      vc.modalPresentationStyle = .fullScreen
+      self.present(vc, animated: true, completion: nil)
 
 
     }

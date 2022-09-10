@@ -18,6 +18,8 @@
 		D16B309528C952EC00229B5E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309428C952EC00229B5E /* Utilities.swift */; };
 		D16B309728C9557200229B5E /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309628C9557200229B5E /* MenuTableViewCell.swift */; };
 		D16B309928C95C3E00229B5E /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309828C95C3E00229B5E /* MenuModel.swift */; };
+		D1C0706128CCC5E900723BA7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0706028CCC5E900723BA7 /* WelcomeViewController.swift */; };
+		D1C0706328CCC67400723BA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0706228CCC67400723BA7 /* ProfileViewController.swift */; };
 		D1ED9B3A28CC73FD00823328 /* Secound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1ED9B3928CC73FD00823328 /* Secound.storyboard */; };
 		D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3B28CC91F000823328 /* CartViewController.swift */; };
 		D1ED9B3E28CC926500823328 /* CartTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3D28CC926500823328 /* CartTableView.swift */; };
@@ -40,6 +42,8 @@
 		D16B309428C952EC00229B5E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D16B309628C9557200229B5E /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		D16B309828C95C3E00229B5E /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		D1C0706028CCC5E900723BA7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D1C0706228CCC67400723BA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D1ED9B3928CC73FD00823328 /* Secound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Secound.storyboard; sourceTree = "<group>"; };
 		D1ED9B3B28CC91F000823328 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		D1ED9B3D28CC926500823328 /* CartTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableView.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				D136615328C93EE0000DD186 /* SceneDelegate.swift */,
 				D136615528C93EE0000DD186 /* ViewController.swift */,
 				D1ED9B3B28CC91F000823328 /* CartViewController.swift */,
+				D1C0706028CCC5E900723BA7 /* WelcomeViewController.swift */,
+				D1C0706228CCC67400723BA7 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,9 +271,11 @@
 			files = (
 				D136615628C93EE0000DD186 /* ViewController.swift in Sources */,
 				D136615228C93EE0000DD186 /* AppDelegate.swift in Sources */,
+				D1C0706128CCC5E900723BA7 /* WelcomeViewController.swift in Sources */,
 				D16B309728C9557200229B5E /* MenuTableViewCell.swift in Sources */,
 				D16B309928C95C3E00229B5E /* MenuModel.swift in Sources */,
 				D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */,
+				D1C0706328CCC67400723BA7 /* ProfileViewController.swift in Sources */,
 				D1ED9B3E28CC926500823328 /* CartTableView.swift in Sources */,
 				D16B309228C9524600229B5E /* MenuTableView.swift in Sources */,
 				D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */,

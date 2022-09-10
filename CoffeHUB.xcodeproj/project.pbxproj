@@ -18,6 +18,7 @@
 		D16B309528C952EC00229B5E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309428C952EC00229B5E /* Utilities.swift */; };
 		D16B309728C9557200229B5E /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309628C9557200229B5E /* MenuTableViewCell.swift */; };
 		D16B309928C95C3E00229B5E /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309828C95C3E00229B5E /* MenuModel.swift */; };
+		D1ED9B3A28CC73FD00823328 /* Secound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1ED9B3928CC73FD00823328 /* Secound.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D16B309428C952EC00229B5E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D16B309628C9557200229B5E /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		D16B309828C95C3E00229B5E /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		D1ED9B3928CC73FD00823328 /* Secound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Secound.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				D136615728C93EE0000DD186 /* Main.storyboard */,
+				D1ED9B3928CC73FD00823328 /* Secound.storyboard */,
 				D136615C28C93EE2000DD186 /* LaunchScreen.storyboard */,
 				D16B309128C9524600229B5E /* MenuTableView.swift */,
 				D16B309628C9557200229B5E /* MenuTableViewCell.swift */,
@@ -197,6 +200,7 @@
 			files = (
 				D136615E28C93EE2000DD186 /* LaunchScreen.storyboard in Resources */,
 				D136615B28C93EE2000DD186 /* Assets.xcassets in Resources */,
+				D1ED9B3A28CC73FD00823328 /* Secound.storyboard in Resources */,
 				D136615928C93EE0000DD186 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

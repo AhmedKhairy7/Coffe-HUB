@@ -3,7 +3,6 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -97,11 +96,9 @@
         <scene sceneID="2yD-FA-hCa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6OB-5r-y9K" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" badgeValue="1" id="wJT-H0-kCw">
-                        <imageReference key="image" image="homeBar" symbolScale="default"/>
-                        <color key="badgeColor" red="0.1764705882" green="0.078431372550000003" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="homeBar" id="f9c-5x-UJ3"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vzJ-Nm-oVN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -124,17 +121,29 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ixO-Xq-3Zp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mep-ti-7uU">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.77647058820000003" green="0.60392156860000001" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="6OB-5r-y9K" kind="relationship" relationship="viewControllers" id="1TC-rs-TrN"/>
+                        <segue destination="M0h-yx-anE" kind="relationship" relationship="viewControllers" id="MBh-7H-Jf6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGm-6i-f4n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.399999999999999" y="84.107946026986511"/>
+        </scene>
+        <!--Secound-->
+        <scene sceneID="gQM-ge-c4m">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Secound" id="M0h-yx-anE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ooG-eF-jbK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2L-Cy-Lc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="602"/>
         </scene>
     </scenes>
     <resources>

@@ -75,6 +75,9 @@ class PreferencesViewController: UIViewController {
     
     
     @IBAction func addToCart(_ sender: UIButton) {
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }

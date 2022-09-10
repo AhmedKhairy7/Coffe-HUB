@@ -26,10 +26,11 @@ class LogInViewController: UIViewController {
     }
    
     
-    @IBAction func backUIBarButtonItem(_ sender: UIBarButtonItem) {
-        self.navigationController?.popViewController(animated: true)
-    }
+    
     @IBAction func loginBtn(_ sender: UIButton) {
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     @IBAction func registerBtn(_ sender: UIButton) {

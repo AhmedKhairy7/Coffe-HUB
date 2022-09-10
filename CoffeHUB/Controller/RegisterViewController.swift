@@ -30,7 +30,7 @@ class RegisterViewController: UIViewController {
   
     @IBAction func registerBtn(_ sender: UIButton) {
         goToLoginScreen()
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "PreferencesViewController") as? PreferencesViewController{
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController{
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

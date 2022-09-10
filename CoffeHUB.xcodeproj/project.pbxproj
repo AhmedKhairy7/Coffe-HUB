@@ -24,6 +24,9 @@
 		D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3B28CC91F000823328 /* CartViewController.swift */; };
 		D1ED9B3E28CC926500823328 /* CartTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3D28CC926500823328 /* CartTableView.swift */; };
 		D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */; };
+		FCC13A2528CCCF1600EE6D4D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */; };
+		FCC13A2728CCEC6100EE6D4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */; };
+		FCC13A2928CD20CD00EE6D4D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		D1ED9B3B28CC91F000823328 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		D1ED9B3D28CC926500823328 /* CartTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableView.swift; sourceTree = "<group>"; };
 		D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,9 @@
 				D1ED9B3B28CC91F000823328 /* CartViewController.swift */,
 				D1C0706028CCC5E900723BA7 /* WelcomeViewController.swift */,
 				D1C0706228CCC67400723BA7 /* ProfileViewController.swift */,
+				FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */,
+				FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */,
+				FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,9 +283,12 @@
 				D1C0706128CCC5E900723BA7 /* WelcomeViewController.swift in Sources */,
 				D16B309728C9557200229B5E /* MenuTableViewCell.swift in Sources */,
 				D16B309928C95C3E00229B5E /* MenuModel.swift in Sources */,
+				FCC13A2928CD20CD00EE6D4D /* PreferencesViewController.swift in Sources */,
 				D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */,
+				FCC13A2528CCCF1600EE6D4D /* LogInViewController.swift in Sources */,
 				D1C0706328CCC67400723BA7 /* ProfileViewController.swift in Sources */,
 				D1ED9B3E28CC926500823328 /* CartTableView.swift in Sources */,
+				FCC13A2728CCEC6100EE6D4D /* RegisterViewController.swift in Sources */,
 				D16B309228C9524600229B5E /* MenuTableView.swift in Sources */,
 				D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */,
 				D16B309528C952EC00229B5E /* Utilities.swift in Sources */,

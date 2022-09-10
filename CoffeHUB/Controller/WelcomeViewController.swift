@@ -22,29 +22,35 @@ class WelcomeViewController: UIViewController {
 
 
     @IBAction func registerBtn(_ sender: UIButton) {
-
+   
+        UIButton.animate(withDuration: 1, animations: { [self] in
+            registerBtnOutlet.layer.backgroundColor = UIColor.brown.cgColor
+            loginBtnOutlet.layer.backgroundColor = UIColor.white.cgColor
+            sender.tintColor = .white
+        })
+                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController{
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
     }
 
     @IBAction func loginBtn(_ sender: UIButton) {
-        loginBtnOutlet.layer.backgroundColor = UIColor.brown.cgColor
-        registerBtnOutlet.layer.backgroundColor = UIColor.white.cgColor
-       // loginBtnOutlet.setTitleColor(UIColor(named: "#8C746A"), for: .normal)
-        loginBtnOutlet.setTitleColor(.red, for: .normal)
-//        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController{
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
+//        loginBtnOutlet.layer.backgroundColor = UIColor.brown.cgColor
+//        registerBtnOutlet.layer.backgroundColor = UIColor.white.cgColor
+//       // loginBtnOutlet.setTitleColor(UIColor(named: "#8C746A"), for: .normal)
+//        loginBtnOutlet.setTitleColor(.red, for: .normal)
 
-        UIButton.animate(withDuration: 1000, animations: { [self] in
+
+        UIButton.animate(withDuration: 1, animations: { [self] in
             loginBtnOutlet.layer.backgroundColor = UIColor.brown.cgColor
             loginBtnOutlet.layer.backgroundColor = UIColor.brown.cgColor
             registerBtnOutlet.layer.backgroundColor = UIColor.white.cgColor
-            loginBtnOutlet.setTitleColor(.white, for: .normal)
+            sender.tintColor = .white
         })
 
 
-//                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController{
-//                    self.navigationController?.pushViewController(vc, animated: true)
-//                }
+                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController{
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
     }
 
     func changeCarveOfBtn(){

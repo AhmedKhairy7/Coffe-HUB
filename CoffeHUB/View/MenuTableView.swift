@@ -20,6 +20,13 @@ extension ViewController : TableViewConfig {
     cell.setupCell(photo: data.photo, name: data.name)
     return cell
   }
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController {
+      self.navigationController!.pushViewController(vc, animated: true)
+
+
+    }
+  }
 
 
 

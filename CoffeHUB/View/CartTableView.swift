@@ -14,7 +14,7 @@ extension CartViewController : UITableViewDelegate,UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell", for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell", for: indexPath) as! CartTableViewCell
     cell.textLabel?.text = ""
     return cell
   }

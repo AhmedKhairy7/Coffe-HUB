@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class RegisterViewController: UIViewController {
     
@@ -13,11 +14,14 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-  
+    var appDelegate: AppDelegate!
+    var manageObjectContext: NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
+        appDelegate = UIApplication.shared.delegate as! AppDelegate
+        manageObjectContext = appDelegate.persistentContainer.viewContext
         deleteBorderTextField()
         registerBtnOutlet.layer.cornerRadius = 20
     }
@@ -29,18 +33,20 @@ class RegisterViewController: UIViewController {
     }
   
     @IBAction func registerBtn(_ sender: UIButton) {
-        goToLoginScreen()
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController{
-            self.navigationController?.pushViewController(vc, animated: true)
+        if let name = nameTextField.text, let email = emailTextField.text, let password = passwordTextField.text{
+            if name.isEmpty || password.isEmpty || email.isEmpty{
+                print("Complete Enter Data!")
+            } else {
+                saveDataofRegister(name: name, email: email, password: password)
+                goToLoginScreen()
+            }
         }
     }
     
     @IBAction func logInBtn(_ sender: UIButton) {
         goToLoginScreen()
     }
-    
- 
-    
+
     func goToLoginScreen(){
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController{
             self.navigationController?.pushViewController(vc, animated: true)

@@ -24,6 +24,10 @@
 		D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3B28CC91F000823328 /* CartViewController.swift */; };
 		D1ED9B3E28CC926500823328 /* CartTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3D28CC926500823328 /* CartTableView.swift */; };
 		D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */; };
+		FC5BCE1328CE01B900DB8F1E /* CoffeHUB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1128CE01B900DB8F1E /* CoffeHUB.xcdatamodeld */; };
+		FC5BCE1528CE027500DB8F1E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */; };
+		FC5BCE1728CE02EF00DB8F1E /* ExtensionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */; };
+		FC5BCE1928CE0AC700DB8F1E /* ExtensionLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1828CE0AC700DB8F1E /* ExtensionLoginViewController.swift */; };
 		FCC13A2528CCCF1600EE6D4D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */; };
 		FCC13A2728CCEC6100EE6D4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */; };
 		FCC13A2928CD20CD00EE6D4D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */; };
@@ -51,6 +55,10 @@
 		D1ED9B3B28CC91F000823328 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		D1ED9B3D28CC926500823328 /* CartTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableView.swift; sourceTree = "<group>"; };
 		D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		FC5BCE1228CE01B900DB8F1E /* CoffeHUB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeHUB.xcdatamodel; sourceTree = "<group>"; };
+		FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRegisterViewController.swift; sourceTree = "<group>"; };
+		FC5BCE1828CE0AC700DB8F1E /* ExtensionLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionLoginViewController.swift; sourceTree = "<group>"; };
 		FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +120,7 @@
 				D136616628C94FA3000DD186 /* View */,
 				D136615A28C93EE2000DD186 /* Assets.xcassets */,
 				D136615F28C93EE2000DD186 /* Info.plist */,
+				FC5BCE1128CE01B900DB8F1E /* CoffeHUB.xcdatamodeld */,
 			);
 			path = CoffeHUB;
 			sourceTree = "<group>";
@@ -120,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				D16B309828C95C3E00229B5E /* MenuModel.swift */,
+				FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +160,8 @@
 				FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */,
 				FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */,
 				FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */,
+				FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */,
+				FC5BCE1828CE0AC700DB8F1E /* ExtensionLoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,14 +297,18 @@
 				D16B309928C95C3E00229B5E /* MenuModel.swift in Sources */,
 				FCC13A2928CD20CD00EE6D4D /* PreferencesViewController.swift in Sources */,
 				D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */,
+				FC5BCE1728CE02EF00DB8F1E /* ExtensionRegisterViewController.swift in Sources */,
 				FCC13A2528CCCF1600EE6D4D /* LogInViewController.swift in Sources */,
 				D1C0706328CCC67400723BA7 /* ProfileViewController.swift in Sources */,
+				FC5BCE1928CE0AC700DB8F1E /* ExtensionLoginViewController.swift in Sources */,
 				D1ED9B3E28CC926500823328 /* CartTableView.swift in Sources */,
 				FCC13A2728CCEC6100EE6D4D /* RegisterViewController.swift in Sources */,
 				D16B309228C9524600229B5E /* MenuTableView.swift in Sources */,
 				D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */,
+				FC5BCE1528CE027500DB8F1E /* RegisterModel.swift in Sources */,
 				D16B309528C952EC00229B5E /* Utilities.swift in Sources */,
 				D136615428C93EE0000DD186 /* SceneDelegate.swift in Sources */,
+				FC5BCE1328CE01B900DB8F1E /* CoffeHUB.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +530,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC5BCE1128CE01B900DB8F1E /* CoffeHUB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC5BCE1228CE01B900DB8F1E /* CoffeHUB.xcdatamodel */,
+			);
+			currentVersion = FC5BCE1228CE01B900DB8F1E /* CoffeHUB.xcdatamodel */;
+			path = CoffeHUB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D136614628C93EE0000DD186 /* Project object */;
 }

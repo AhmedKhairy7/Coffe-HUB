@@ -24,6 +24,10 @@ class PreferencesViewController: UIViewController {
     @IBOutlet weak var threeSugarOutlet: UIButton!
     @IBOutlet weak var imageCoffee: UIImageView!
     var countAddCart = 0
+    var countCoffeeChoose = 0
+    var flagSmall = true
+    var flagMedium = true
+    var flagLarge = true
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,13 +36,37 @@ class PreferencesViewController: UIViewController {
     }
     
     @IBAction func addBtn(_ sender: UIButton) {
+            countCoffeeChoose += 1
+            countCoffee.text = "\(countCoffeeChoose)"
     }
     
     @IBAction func decreaseBtn(_ sender: UIButton) {
+        if countCoffeeChoose > 0{
+            countCoffeeChoose -= 1
+            countCoffee.text = "\(countCoffeeChoose)"
+        }
     }
     
     
     @IBAction func smallCoffeeBtn(_ sender: UIButton) {
+//        flagSmall = !flagSmall
+//        if flagSmall == false {
+//            print(flagSmall)
+//            sender.setImage(UIImage(named: "small fill"), for: .normal)
+//            lBtnOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
+//            mBtnOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
+//            flagMedium = true
+//            flagLarge = true
+//            flagSmall = false
+//        } else {
+//            print(flagSmall)
+//            sender.setImage(UIImage(named: "s"), for: .normal)
+//            lBtnOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
+//            mBtnOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
+//            flagMedium = false
+//            flagLarge = false
+//            flagSmall = true
+//        }
     }
     
     @IBAction func mediumCoffeeBtn(_ sender: UIButton) {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2k6-zz-QDg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2k6-zz-QDg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -509,13 +509,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEW-Uy-5tH">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="w4C-SM-qq1">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header11" translatesAutoresizingMaskIntoConstraints="NO" id="w4C-SM-qq1">
                                                 <rect key="frame" x="0.0" y="50" width="414" height="220"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="220" id="RJF-oz-Buv"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="M3" translatesAutoresizingMaskIntoConstraints="NO" id="g2F-5m-JpZ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macciato" translatesAutoresizingMaskIntoConstraints="NO" id="g2F-5m-JpZ">
                                                 <rect key="frame" x="87" y="100" width="240" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Jts-G4-aN6"/>
@@ -688,8 +688,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Add to cart"/>
                                                 <connections>
-                                                    <action selector="addToCart:" destination="RNq-SG-RkR" eventType="touchUpInside" id="sbu-mb-c6f"/>
-                                                    <action selector="registerBtn:" destination="VHm-sa-etZ" eventType="touchUpInside" id="3YQ-fp-f4p"/>
+                                                    <action selector="addToCart:" destination="RNq-SG-RkR" eventType="touchUpInside" id="k9r-gP-Rxf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHa-0f-Q7W">
@@ -946,15 +945,15 @@
     <resources>
         <image name="Group 19" width="43" height="18"/>
         <image name="L fill" width="37" height="54"/>
-        <image name="M3" width="41" height="61"/>
         <image name="Welcomeimg" width="125.5" height="120"/>
         <image name="add-remove items" width="105" height="34"/>
-        <image name="background" width="169" height="130"/>
         <image name="btn" width="315" height="50"/>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="header11" width="377" height="183"/>
         <image name="homeBar" width="26" height="26"/>
         <image name="logoCoffee" width="225" height="225"/>
         <image name="m" width="30" height="45"/>
+        <image name="macciato" width="66" height="98"/>
         <image name="no " width="26" height="25"/>
         <image name="one" width="18" height="18"/>
         <image name="s" width="26" height="32"/>

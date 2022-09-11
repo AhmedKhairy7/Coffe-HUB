@@ -21,12 +21,16 @@ extension ViewController : TableViewConfig {
     return cell
   }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController {
-      vc.modalPresentationStyle = .fullScreen
-      self.present(vc, animated: true, completion: nil)
-
-
-    }
+//    if let vc = self.storyboard?.instantiateViewController(withIdentifier: "PreferencesViewController") as? PreferencesViewController {
+//      vc.modalPresentationStyle = .fullScreen
+//      self.present(vc, animated: true, completion: nil)
+//
+//
+//    }
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    let vc = storyBoard.instantiateViewController(withIdentifier: "PreferencesViewController") as! PreferencesViewController
+    vc.modalPresentationStyle = .fullScreen
+    self.present(vc, animated:true, completion:nil)
   }
 
 

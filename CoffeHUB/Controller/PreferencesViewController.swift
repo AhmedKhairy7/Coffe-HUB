@@ -75,9 +75,14 @@ class PreferencesViewController: UIViewController {
     
     
     @IBAction func addToCart(_ sender: UIButton) {
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController{
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+      print("tapeed")
+//        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController{
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+      let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
+      let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
+      vc.modalPresentationStyle = .fullScreen
+      self.present(vc, animated:true, completion:nil)
     }
     
 }

@@ -28,9 +28,15 @@ class LogInViewController: UIViewController {
     
     
     @IBAction func loginBtn(_ sender: UIButton) {
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController{
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+//        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController {
+////            self.navigationController?.pushViewController(vc, animated: true)
+//          vc.modalPresentationStyle = .fullScreen
+//          self.present(vc, animated: true, completion: nil)
+//        }
+      let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
+      let vc = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+      vc.modalPresentationStyle = .fullScreen
+      self.present(vc, animated:true, completion:nil)
     }
     
     @IBAction func registerBtn(_ sender: UIButton) {

@@ -49,7 +49,7 @@ class RegisterViewController: UIViewController {
 
     func goToLoginScreen(){
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController{
-            self.navigationController?.pushViewController(vc, animated: true)
+          self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

@@ -30,7 +30,7 @@ extension ViewController : TableViewConfig {
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "PreferencesViewController") as! PreferencesViewController
     vc.modalPresentationStyle = .fullScreen
-    self.present(vc, animated:true, completion:nil)
+    self.navigationController?.pushViewController(vc, animated: true)
   }
 
 

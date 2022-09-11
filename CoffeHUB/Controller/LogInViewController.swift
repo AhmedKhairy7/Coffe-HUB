@@ -34,9 +34,10 @@ class LogInViewController: UIViewController {
 //          self.present(vc, animated: true, completion: nil)
 //        }
       let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
-      let vc = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+      let vc = storyBoard.instantiateViewController(withIdentifier: "tabBarID")
       vc.modalPresentationStyle = .fullScreen
       self.present(vc, animated:true, completion:nil)
+
     }
     
     @IBAction func registerBtn(_ sender: UIButton) {

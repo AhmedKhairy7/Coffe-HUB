@@ -83,6 +83,7 @@ class PreferencesViewController: UIViewController {
       let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
       vc.modalPresentationStyle = .fullScreen
       self.present(vc, animated:true, completion:nil)
+
     }
     
 }

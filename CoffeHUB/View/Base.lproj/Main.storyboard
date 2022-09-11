@@ -495,7 +495,7 @@
             </objects>
             <point key="canvasLocation" x="5705.7971014492759" y="620.75892857142856"/>
         </scene>
-        <!--Preferences-->
+        <!--Preferences View Controller-->
         <scene sceneID="a1I-SA-njN">
             <objects>
                 <viewController storyboardIdentifier="PreferencesViewController" id="RNq-SG-RkR" customClass="PreferencesViewController" customModule="CoffeHUB" customModuleProvider="target" sceneMemberID="viewController">
@@ -833,11 +833,7 @@
                             <constraint firstItem="GDz-5s-f78" firstAttribute="bottom" secondItem="ZCp-zY-cgk" secondAttribute="bottom" id="kj2-aK-zRO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Preferences" id="dG1-Ot-JJd">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="BgF-xw-KKu">
-                            <color key="tintColor" red="0.6152468324" green="0.46775692699999999" blue="0.34429246190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="dG1-Ot-JJd"/>
                     <connections>
                         <outlet property="cartBtnOutlet" destination="IQy-k7-8dy" id="T14-rr-UrY"/>
                         <outlet property="countCoffee" destination="oto-Xs-QWR" id="bYd-gS-ZkG"/>

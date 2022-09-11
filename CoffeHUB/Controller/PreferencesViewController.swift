@@ -10,31 +10,20 @@ import UIKit
 class PreferencesViewController: UIViewController {
 
     @IBOutlet weak var cartBtnOutlet: UIButton!
-    
     @IBOutlet weak var nameCoffee: UILabel!
-    
     @IBOutlet weak var priceCoffee: UILabel!
-    
     @IBOutlet weak var countCoffee: UILabel!
-    
-    
+    @IBOutlet weak var countOfAddToCart: UILabel!
     @IBOutlet weak var totalPriceLabel: UILabel!
-    
     @IBOutlet weak var smallCoffeeOutlet: UIButton!
-    
-    
     @IBOutlet weak var mediumCoffeeOutlet: UIButton!
-    
     @IBOutlet weak var largeCoffeeOutlet: UIButton!
-    
     @IBOutlet weak var noSugarOutlet: UIButton!
-    
     @IBOutlet weak var oneSugarOutlet: UIButton!
-    
     @IBOutlet weak var twoSugarOutlet: UIButton!
-    
     @IBOutlet weak var threeSugarOutlet: UIButton!
-    
+    @IBOutlet weak var imageCoffee: UIImageView!
+    var countAddCart = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -79,6 +68,9 @@ class PreferencesViewController: UIViewController {
 //        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController{
 //            self.navigationController?.pushViewController(vc, animated: true)
 //        }
+        countAddCart += 1
+        countOfAddToCart.text = "\(countAddCart)"
+        
       let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
       let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
       vc.modalPresentationStyle = .fullScreen
@@ -86,4 +78,7 @@ class PreferencesViewController: UIViewController {
 
     }
     
+    @IBAction func backToMenuScreen(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

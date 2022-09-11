@@ -557,10 +557,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHa-0f-Q7W">
-                                                <rect key="frame" x="321" y="300" width="32" height="26"/>
+                                                <rect key="frame" x="321" y="300" width="32" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="32" id="fPd-Q3-Qw1"/>
-                                                    <constraint firstAttribute="height" constant="26" id="qcc-dh-DNg"/>
+                                                    <constraint firstAttribute="height" constant="30" id="qcc-dh-DNg"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -569,10 +569,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX3-J5-DsM">
-                                                <rect key="frame" x="358" y="300" width="36" height="26"/>
+                                                <rect key="frame" x="358" y="300" width="36" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="RPW-r8-RyG"/>
-                                                    <constraint firstAttribute="height" constant="26" id="nBh-86-BTb"/>
+                                                    <constraint firstAttribute="height" constant="30" id="nBh-86-BTb"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -611,6 +611,9 @@
                                                 <color key="tintColor" red="0.6152468324" green="0.46775692699999999" blue="0.34429246190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="&lt;" cornerStyle="large"/>
+                                                <connections>
+                                                    <action selector="backToMenuScreen:" destination="RNq-SG-RkR" eventType="touchUpInside" id="Zun-mX-1aE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQy-k7-8dy">
                                                 <rect key="frame" x="53" y="643" width="308" height="50"/>
@@ -636,6 +639,7 @@
                                             <constraint firstItem="DaA-dg-l8w" firstAttribute="top" secondItem="4Ol-4T-uAz" secondAttribute="bottom" constant="7.5" id="BTg-fX-uI3"/>
                                             <constraint firstItem="tca-MJ-3XC" firstAttribute="top" secondItem="Mab-iW-usG" secondAttribute="bottom" constant="30" id="Byb-IF-XOs"/>
                                             <constraint firstItem="KMG-IO-OXn" firstAttribute="top" secondItem="Dae-IK-ohG" secondAttribute="bottom" constant="30" id="CE1-1Y-1sd"/>
+                                            <constraint firstAttribute="trailing" secondItem="LX3-J5-DsM" secondAttribute="trailing" constant="20" symbolic="YES" id="D7m-rj-cc0"/>
                                             <constraint firstItem="yHa-0f-Q7W" firstAttribute="top" secondItem="w4C-SM-qq1" secondAttribute="bottom" constant="30" id="DKW-GY-2t7"/>
                                             <constraint firstAttribute="trailing" secondItem="Mab-iW-usG" secondAttribute="trailing" id="DKr-eD-YnF"/>
                                             <constraint firstAttribute="trailing" secondItem="1SP-3o-0V6" secondAttribute="trailing" constant="20" id="DyH-Vl-agF"/>
@@ -715,6 +719,8 @@
                     <connections>
                         <outlet property="cartBtnOutlet" destination="IQy-k7-8dy" id="T14-rr-UrY"/>
                         <outlet property="countCoffee" destination="oto-Xs-QWR" id="bYd-gS-ZkG"/>
+                        <outlet property="countOfAddToCart" destination="JJU-qQ-5xD" id="vNm-8A-h0O"/>
+                        <outlet property="imageCoffee" destination="g2F-5m-JpZ" id="g5q-cS-ETi"/>
                         <outlet property="largeCoffeeOutlet" destination="FDT-Fl-DlD" id="DzY-h6-Evb"/>
                         <outlet property="mediumCoffeeOutlet" destination="80d-JC-bCS" id="rWr-K9-9wT"/>
                         <outlet property="nameCoffee" destination="TGT-cS-wWB" id="h0P-LG-I7a"/>

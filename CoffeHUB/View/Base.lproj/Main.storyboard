@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T9O-vt-oq5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T9O-vt-oq5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -85,26 +85,26 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mc-W8-emo">
-                                                <rect key="frame" x="20" y="438" width="374" height="40"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="20" y="438" width="374" height="50"/>
+                                                <color key="backgroundColor" red="0.72641628979999995" green="0.50224113459999997" blue="0.40734589100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="4bW-WE-5WA"/>
+                                                    <constraint firstAttribute="height" constant="50" id="4bW-WE-5WA"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="btn"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Log in"/>
                                                 <connections>
                                                     <action selector="loginBtn:" destination="eht-0e-dRk" eventType="touchUpInside" id="vUr-YW-wGd"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4Z-c7-vtd">
-                                                <rect key="frame" x="80" y="496.5" width="179" height="21"/>
+                                                <rect key="frame" x="80" y="506.5" width="179" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.56911346200000001" green="0.56911346200000001" blue="0.56911346200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMI-cA-sVI">
-                                                <rect key="frame" x="250" y="490" width="144" height="34.5"/>
+                                                <rect key="frame" x="250" y="500" width="144" height="34.5"/>
                                                 <color key="tintColor" red="0.60745340589999997" green="0.45585608480000001" blue="0.34077385069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Register">
@@ -178,6 +178,7 @@
                     <navigationItem key="navigationItem" id="WZl-sZ-RL1"/>
                     <connections>
                         <outlet property="emailTextField" destination="YbT-bv-GXT" id="SMv-zc-xg0"/>
+                        <outlet property="logInOutlet" destination="7Mc-W8-emo" id="4Hh-Uk-bNC"/>
                         <outlet property="passwordTextField" destination="KxJ-gm-u2c" id="1GZ-Ed-ZWC"/>
                     </connections>
                 </viewController>
@@ -413,8 +414,8 @@
                                                     <constraint firstAttribute="width" constant="76" id="QHC-ms-wbP"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oto-Xs-QWR">
-                                                <rect key="frame" x="299.5" y="300.5" width="13.5" height="49"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oto-Xs-QWR">
+                                                <rect key="frame" x="303" y="300.5" width="10" height="49"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -521,7 +522,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-xp-Zhd">
                                                         <rect key="frame" x="134" y="0.0" width="67" height="56"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="Group 19"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="two fill"/>
                                                         <connections>
                                                             <action selector="twoSugarBtn:" destination="RNq-SG-RkR" eventType="touchUpInside" id="VFX-Vy-C8x"/>
                                                         </connections>
@@ -545,8 +546,8 @@
                                                 <color key="textColor" red="0.6152468324" green="0.46775692699999999" blue="0.34429246190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDw-Sf-VsU">
-                                                <rect key="frame" x="308.5" y="587" width="38.5" height="36"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDw-Sf-VsU">
+                                                <rect key="frame" x="309" y="587" width="38" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -558,10 +559,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHa-0f-Q7W">
-                                                <rect key="frame" x="321" y="300" width="32" height="30"/>
+                                                <rect key="frame" x="313" y="300" width="40" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="32" id="fPd-Q3-Qw1"/>
-                                                    <constraint firstAttribute="height" constant="30" id="qcc-dh-DNg"/>
+                                                    <constraint firstAttribute="width" constant="40" id="fPd-Q3-Qw1"/>
+                                                    <constraint firstAttribute="height" constant="40" id="qcc-dh-DNg"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -570,10 +571,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX3-J5-DsM">
-                                                <rect key="frame" x="358" y="300" width="36" height="30"/>
+                                                <rect key="frame" x="358" y="300" width="36" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="RPW-r8-RyG"/>
-                                                    <constraint firstAttribute="height" constant="30" id="nBh-86-BTb"/>
+                                                    <constraint firstAttribute="height" constant="40" id="nBh-86-BTb"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -741,11 +742,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 19" width="43" height="18"/>
         <image name="L fill" width="37" height="54"/>
         <image name="add-remove items" width="105" height="34"/>
         <image name="back" width="13" height="20"/>
-        <image name="btn" width="315" height="50"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="header11" width="377" height="183"/>
         <image name="m" width="30" height="45"/>
@@ -755,6 +754,7 @@
         <image name="pngwing.com" width="3001" height="1645"/>
         <image name="s" width="26" height="32"/>
         <image name="three" width="43" height="42"/>
+        <image name="two fill" width="43" height="18"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

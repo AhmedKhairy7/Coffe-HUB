@@ -11,6 +11,7 @@ import ProgressHUD
 
 class LogInViewController: UIViewController {
     
+    @IBOutlet weak var logInOutlet: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     var appDelegate: AppDelegate!
@@ -22,6 +23,7 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         deleteBorderTextField()
         self.navigationController?.isNavigationBarHidden = true
+        logInOutlet.layer.cornerRadius = 25
         appDelegate = UIApplication.shared.delegate as! AppDelegate
         manageObjectContext = appDelegate.persistentContainer.viewContext
     }

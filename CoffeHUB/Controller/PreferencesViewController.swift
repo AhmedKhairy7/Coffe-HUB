@@ -28,9 +28,14 @@ class PreferencesViewController: UIViewController {
     var flagSmall = true
     var flagMedium = true
     var flagLarge = true
-    var name = ""
-    var price = ""
-    var imageItem = ""
+    var flagNo = true
+    var flagOne = true
+    var flagTwo = true
+    var flagThree = true
+    var name = "Donia"
+    var price = "12"
+    var imageItem = "m fill"
+    var totalPrice = 12
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,56 +46,174 @@ class PreferencesViewController: UIViewController {
     @IBAction func addBtn(_ sender: UIButton) {
             countCoffeeChoose += 1
             countCoffee.text = "\(countCoffeeChoose)"
+            setTotalPrice()
     }
     
     @IBAction func decreaseBtn(_ sender: UIButton) {
         if countCoffeeChoose > 0{
             countCoffeeChoose -= 1
             countCoffee.text = "\(countCoffeeChoose)"
+            setTotalPrice()
         }
     }
     
     
     @IBAction func smallCoffeeBtn(_ sender: UIButton) {
-//        flagSmall = !flagSmall
-//        if flagSmall == false {
-//            print(flagSmall)
-//            sender.setImage(UIImage(named: "small fill"), for: .normal)
-//            lBtnOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
-//            mBtnOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
-//            flagMedium = true
-//            flagLarge = true
-//            flagSmall = false
-//        } else {
-//            print(flagSmall)
-//            sender.setImage(UIImage(named: "s"), for: .normal)
-//            lBtnOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
-//            mBtnOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
-//            flagMedium = false
-//            flagLarge = false
-//            flagSmall = true
-//        }
+        flagSmall = !flagSmall
+        if flagSmall == false {
+            sender.setImage(UIImage(named: "small fill"), for: .normal)
+            largeCoffeeOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
+            mediumCoffeeOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
+            flagMedium = true
+            flagLarge = true
+            flagSmall = false
+            var total = Int(price)! / 2 * Int(countCoffee.text!)!
+            totalPriceLabel.text = "\(total)"
+        } else {
+            sender.setImage(UIImage(named: "s"), for: .normal)
+            largeCoffeeOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
+            mediumCoffeeOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
+            flagMedium = false
+            flagLarge = false
+            flagSmall = true
+        }
     }
     
     @IBAction func mediumCoffeeBtn(_ sender: UIButton) {
+        flagMedium = !flagMedium
+        if flagMedium == false {
+            sender.setImage(UIImage(named: "m fill"), for: .normal)
+            smallCoffeeOutlet.setImage(UIImage(named: "s"), for: UIControl.State.normal)
+            largeCoffeeOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
+            flagMedium = false
+            flagLarge = true
+            flagSmall = true
+            var total = Int(price)! * Int(countCoffee.text!)!
+            totalPriceLabel.text = "\(total)"
+        } else {
+            sender.setImage(UIImage(named: "m"), for: .normal)
+            smallCoffeeOutlet.setImage(UIImage(named: "s"), for: UIControl.State.normal)
+            largeCoffeeOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
+            flagMedium = true
+            flagLarge = false
+            flagSmall = false
+        }
     }
     
     
     @IBAction func largeCoffeeBtn(_ sender: UIButton) {
+        flagLarge = !flagLarge
+        if flagLarge == false {
+            sender.setImage(UIImage(named: "L fill"), for: .normal)
+            smallCoffeeOutlet.setImage(UIImage(named: "s"), for: UIControl.State.normal)
+            mediumCoffeeOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
+            flagMedium = true
+            flagLarge = false
+            flagSmall = true
+            var total = Int(price)! * 2 * Int(countCoffee.text!)!
+            totalPriceLabel.text = "\(total)"
+        } else {
+            sender.setImage(UIImage(named: "L"), for: .normal)
+            smallCoffeeOutlet.setImage(UIImage(named: "s"), for: UIControl.State.normal)
+            mediumCoffeeOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
+            flagMedium = false
+            flagLarge = true
+            flagSmall = false
+        }
     }
     
     
     @IBAction func noSugarBtn(_ sender: UIButton) {
+        flagNo = !flagNo
+        if flagNo == false {
+            sender.setImage(UIImage(named: "no fill"), for: .normal)
+            oneSugarOutlet.setImage(UIImage(named: "one"), for: UIControl.State.normal)
+            twoSugarOutlet.setImage(UIImage(named: "two"), for: UIControl.State.normal)
+            threeSugarOutlet.setImage(UIImage(named: "three"), for: UIControl.State.normal)
+            flagThree = true
+            flagTwo = true
+            flagOne = true
+            flagNo = false
+        } else {
+            sender.setImage(UIImage(named: "noo"), for: .normal)
+            oneSugarOutlet.setImage(UIImage(named: "one"), for: UIControl.State.normal)
+            twoSugarOutlet.setImage(UIImage(named: "two"), for: UIControl.State.normal)
+            threeSugarOutlet.setImage(UIImage(named: "three"), for: UIControl.State.normal)
+            flagThree = false
+            flagTwo = false
+            flagOne = false
+            flagNo = true
+        }
     }
     
     @IBAction func oneSugarBtn(_ sender: UIButton) {
+        flagOne = !flagOne
+        if flagOne == false {
+            sender.setImage(UIImage(named: "one fill"), for: .normal)
+            noSugarOutlet.setImage(UIImage(named: "noo"), for: UIControl.State.normal)
+            twoSugarOutlet.setImage(UIImage(named: "two"), for: UIControl.State.normal)
+            threeSugarOutlet.setImage(UIImage(named: "three"), for: UIControl.State.normal)
+            flagOne = false
+            flagTwo = true
+            flagNo = true
+            flagThree = true
+        } else {
+            sender.setImage(UIImage(named: "one"), for: .normal)
+            noSugarOutlet.setImage(UIImage(named: "noo"), for: UIControl.State.normal)
+            twoSugarOutlet.setImage(UIImage(named: "two"), for: UIControl.State.normal)
+            threeSugarOutlet.setImage(UIImage(named: "three"), for: UIControl.State.normal)
+            flagOne = true
+            flagNo = false
+            flagTwo = false
+            flagThree = false
+        }
     }
     
     
     @IBAction func twoSugarBtn(_ sender: UIButton) {
+        flagTwo = !flagTwo
+        if flagTwo == false {
+            sender.setImage(UIImage(named: "two fill"), for: .normal)
+            noSugarOutlet.setImage(UIImage(named: "noo"), for: UIControl.State.normal)
+            oneSugarOutlet.setImage(UIImage(named: "one"), for: UIControl.State.normal)
+            threeSugarOutlet.setImage(UIImage(named: "three"), for: UIControl.State.normal)
+            flagTwo = false
+            flagOne = true
+            flagNo = true
+            flagThree = true
+        } else {
+            sender.setImage(UIImage(named: "two"), for: .normal)
+            noSugarOutlet.setImage(UIImage(named: "noo"), for: UIControl.State.normal)
+            oneSugarOutlet.setImage(UIImage(named: "one"), for: UIControl.State.normal)
+            threeSugarOutlet.setImage(UIImage(named: "three"), for: UIControl.State.normal)
+            flagTwo = true
+            flagNo = false
+            flagOne = false
+            flagThree = false
+        }
     }
     
     @IBAction func threeSugarBtn(_ sender: UIButton) {
+        flagThree = !flagThree
+        if flagThree == false {
+            sender.setImage(UIImage(named: "three fill"), for: .normal)
+            noSugarOutlet.setImage(UIImage(named: "noo"), for: UIControl.State.normal)
+            twoSugarOutlet.setImage(UIImage(named: "two"), for: UIControl.State.normal)
+            oneSugarOutlet.setImage(UIImage(named: "one"), for: UIControl.State.normal)
+            flagThree = false
+            flagTwo = true
+            flagNo = true
+            flagOne = true
+        } else {
+            sender.setImage(UIImage(named: "three"), for: .normal)
+            noSugarOutlet.setImage(UIImage(named: "noo"), for: UIControl.State.normal)
+            twoSugarOutlet.setImage(UIImage(named: "two"), for: UIControl.State.normal)
+            oneSugarOutlet.setImage(UIImage(named: "one"), for: UIControl.State.normal)
+            flagThree = true
+            flagNo = false
+            flagTwo = false
+            flagOne = false
+        }
     }
     
     
@@ -113,4 +236,14 @@ class PreferencesViewController: UIViewController {
     self.navigationController?.popViewController(animated: true)
   }
 
+    func setDataFromMenu(){
+        nameCoffee.text = name
+        priceCoffee.text = price
+        imageCoffee.image = UIImage(named: imageItem)
+    }
+    
+    func setTotalPrice(){
+        var total = Int(price)! * Int(countCoffee.text!)!
+        totalPriceLabel.text = "\(total)"
+    }
 }

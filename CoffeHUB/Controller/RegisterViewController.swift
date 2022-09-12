@@ -37,8 +37,12 @@ class RegisterViewController: UIViewController {
             if name.isEmpty || password.isEmpty || email.isEmpty{
                 print("Complete Enter Data!")
             } else {
-                saveDataofRegister(name: name, email: email, password: password)
-                goToLoginScreen()
+//                saveDataofRegister(name: name, email: email, password: password)
+                RegisterNetwork().createUser(name: name, email: email, password: password)
+               goToLoginScreen()
+                
+                
+                
             }
         }
     }

@@ -39,17 +39,21 @@ class LogInViewController: UIViewController {
                 print("Complete Enter Data !")
               ProgressHUD.showError("Complete Enter Data !")
             } else {
-                fetchDataRegister()
-                for item in DataPersonArray{
-                    if email == item.email && password == item.password{
-                      ProgressHUD.showSucceed("Welcome again 👏🏻")
-                        moveTOtabBar()
-                    } else {
-                        print("data error enter again!")
-                      ProgressHUD.showError("data error enter again !")
-
-                    }
-                }
+//                fetchDataRegister()
+//                for item in DataPersonArray{
+//                    if email == item.email && password == item.password{
+//                      ProgressHUD.showSucceed("Welcome again 👏🏻")
+//                        moveTOtabBar()
+//                    } else {
+//                        print("data error enter again!")
+//                      ProgressHUD.showError("data error enter again !")
+//
+//                    }
+//                }
+                
+                
+                
+                
             }
         }
     }

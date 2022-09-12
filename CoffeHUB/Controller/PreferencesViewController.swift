@@ -32,15 +32,15 @@ class PreferencesViewController: UIViewController {
     var flagOne = true
     var flagTwo = true
     var flagThree = true
-    var name = "Donia"
-    var price = "12"
-    var imageItem = "m fill"
+    var name = ""
+    var price = ""
     var totalPrice = 12
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.isNavigationBarHidden = false
         cartBtnOutlet.layer.cornerRadius = 25
+      setDataFromMenu()
     }
     
     @IBAction func addBtn(_ sender: UIButton) {
@@ -219,6 +219,7 @@ class PreferencesViewController: UIViewController {
     
     @IBAction func addToCart(_ sender: UIButton) {
       print("tapeed")
+      print("\(name)\(price)")
 //        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController{
 //            self.navigationController?.pushViewController(vc, animated: true)
 //        }
@@ -238,8 +239,8 @@ class PreferencesViewController: UIViewController {
 
     func setDataFromMenu(){
         nameCoffee.text = name
-        priceCoffee.text = price
-        imageCoffee.image = UIImage(named: imageItem)
+        priceCoffee.text = "\(price) EG"
+        imageCoffee.image = UIImage(named: name)
     }
     
     func setTotalPrice(){

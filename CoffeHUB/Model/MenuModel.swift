@@ -12,4 +12,6 @@ import UIKit
 struct Menu {
   let photo : UIImage
   let name : String
+  let price : String
+  
 }

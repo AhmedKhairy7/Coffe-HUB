@@ -17,18 +17,15 @@ extension ViewController : TableViewConfig {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = menuTbView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuTableViewCell
     let data = arrMenu[indexPath.row]
-    cell.setupCell(photo: data.photo, name: data.name)
+    cell.setupCell( menu: Menu.init(photo: data.photo, name: data.name, price: data.price))
     return cell
   }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    if let vc = self.storyboard?.instantiateViewController(withIdentifier: "PreferencesViewController") as? PreferencesViewController {
-//      vc.modalPresentationStyle = .fullScreen
-//      self.present(vc, animated: true, completion: nil)
-//
-//
-//    }
+
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "PreferencesViewController") as! PreferencesViewController
+    vc.name = arrMenu[indexPath.row].name
+    vc.price = arrMenu[indexPath.row].price
     vc.modalPresentationStyle = .fullScreen
     self.navigationController?.pushViewController(vc, animated: true)
   }

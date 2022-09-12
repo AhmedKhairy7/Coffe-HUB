@@ -23,10 +23,10 @@ class MenuTableViewCell: UITableViewCell {
   }
 
 
-  func setupCell(photo: UIImage, name : String) {
+  func setupCell(menu: Menu?) {
 
-    menuImage.image = photo
-    menuLabel.text = name
+     menuImage.image = menu?.photo
+     menuLabel.text = menu?.name
   }
 
   

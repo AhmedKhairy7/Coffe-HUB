@@ -28,6 +28,9 @@ class PreferencesViewController: UIViewController {
     var flagSmall = true
     var flagMedium = true
     var flagLarge = true
+    var name = ""
+    var price = ""
+    var imageItem = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 

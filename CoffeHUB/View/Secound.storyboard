@@ -40,7 +40,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="jc7-LE-7Jc" secondAttribute="height" multiplier="1:1" id="QGZ-QE-d6j"/>
                                                     </constraints>
-                                                    <buttonConfiguration key="configuration" style="plain" image="greaterthan" catalog="system">
+                                                    <buttonConfiguration key="configuration" style="plain" image="back0">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
                                                         <color key="baseForegroundColor" red="0.77647058820000003" green="0.60392156860000001" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </buttonConfiguration>
@@ -123,7 +123,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Krz-dF-TRw">
-                                <rect key="frame" x="0.0" y="44" width="414" height="372"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="372"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.95686274510000002" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="372" id="rcz-DK-ox3"/>
@@ -248,7 +248,7 @@
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="201" translatesAutoresizingMaskIntoConstraints="NO" id="wgh-3B-8V1">
-                                <rect key="frame" x="16" y="451" width="382" height="40"/>
+                                <rect key="frame" x="16" y="495" width="382" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Subtotal:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QE-US-TYA">
                                         <rect key="frame" x="0.0" y="0.0" width="139" height="40"/>
@@ -268,7 +268,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="201" translatesAutoresizingMaskIntoConstraints="NO" id="IDf-O0-mlZ">
-                                <rect key="frame" x="16" y="519.5" width="382" height="40"/>
+                                <rect key="frame" x="16" y="563.5" width="382" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Shipping:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4E-lC-Hmf">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
@@ -325,7 +325,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---------------------------------------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYd-4m-t6E">
-                                <rect key="frame" x="16" y="574.5" width="382" height="125"/>
+                                <rect key="frame" x="16" y="618.5" width="382" height="81"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.1764705882" green="0.078431372550000003" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -354,8 +354,14 @@
                             <constraint firstItem="Krz-dF-TRw" firstAttribute="top" secondItem="zxm-Pr-QTe" secondAttribute="top" id="wLG-NK-uar"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" selectedImage="cart.fill" id="UZB-GY-AS6"/>
-                    <navigationItem key="navigationItem" title="Cart" id="3kY-dL-IQL"/>
+                    <navigationItem key="navigationItem" title="Cart" id="3kY-dL-IQL">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="Dqm-fq-Nvd">
+                            <color key="tintColor" red="0.77647058820000003" green="0.60392156860000001" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="backToMenu:" destination="wdC-I0-nKj" id="xgL-xM-tr5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="shippingLabel" destination="Eep-1R-sJc" id="El3-wJ-vGk"/>
                         <outlet property="subtotalLabel" destination="9Vb-wQ-b31" id="NBX-Ve-YwX"/>
@@ -365,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYo-4a-P7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3816.8000000000002" y="83.208395802098963"/>
+            <point key="canvasLocation" x="4726.0869565217399" y="83.035714285714278"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ETl-DF-PGq">
@@ -525,7 +531,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s23-Pk-kgP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4650.3999999999996" y="82.3088455772114"/>
+            <point key="canvasLocation" x="5559.420289855073" y="81.696428571428569"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Y7t-e3-lCE">
@@ -533,13 +539,14 @@
                 <tabBarController storyboardIdentifier="tabBarID" automaticallyAdjustsScrollViewInsets="NO" id="tuU-Si-Z5W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rBz-cl-Lp2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.77647058820000003" green="0.60392156860000001" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="jcB-Jc-a28" kind="relationship" relationship="viewControllers" id="kXS-BU-ite"/>
-                        <segue destination="wdC-I0-nKj" kind="relationship" relationship="viewControllers" id="Ab2-IM-qJN"/>
+                        <segue destination="9o5-O9-GFO" kind="relationship" relationship="viewControllers" id="Ab2-IM-qJN"/>
                         <segue destination="ZkU-mQ-JSr" kind="relationship" relationship="viewControllers" id="3oK-4U-xwa"/>
                     </connections>
                 </tabBarController>
@@ -547,14 +554,34 @@
             </objects>
             <point key="canvasLocation" x="957.60000000000002" y="84.107946026986511"/>
         </scene>
+        <!--Cart-->
+        <scene sceneID="c77-Ye-mku">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9o5-O9-GFO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" selectedImage="cart.fill" id="UZB-GY-AS6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1RG-fz-s5k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wdC-I0-nKj" kind="relationship" relationship="rootViewController" id="d2e-RM-6UN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ixu-M3-38w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3815.9420289855075" y="83.035714285714278"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GettyImages-487149250-58c71e5b3df78c353c0577eb" width="1887" height="1415"/>
         <image name="M1" width="56" height="56"/>
         <image name="M3" width="41" height="61"/>
+        <image name="back" width="13" height="20"/>
+        <image name="back0" width="9" height="15"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
-        <image name="greaterthan" catalog="system" width="128" height="111"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="minus.circle" catalog="system" width="128" height="121"/>

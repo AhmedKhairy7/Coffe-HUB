@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import ProgressHUD
 
 class LogInViewController: UIViewController {
     
@@ -33,14 +34,18 @@ class LogInViewController: UIViewController {
     @IBAction func loginBtn(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text{
             if email.isEmpty || password.isEmpty{
-                print("Complete Enter Data!")
+                print("Complete Enter Data !")
+              ProgressHUD.showError("Complete Enter Data !")
             } else {
                 fetchDataRegister()
                 for item in DataPersonArray{
                     if email == item.email && password == item.password{
+                      ProgressHUD.showSucceed("Welcome again 👏🏻")
                         moveTOtabBar()
                     } else {
                         print("data error enter again!")
+                      ProgressHUD.showError("data error enter again !")
+
                     }
                 }
             }

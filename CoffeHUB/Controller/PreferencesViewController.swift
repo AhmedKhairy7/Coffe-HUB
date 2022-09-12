@@ -31,7 +31,7 @@ class PreferencesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = false
         cartBtnOutlet.layer.cornerRadius = 25
     }
     
@@ -96,17 +96,18 @@ class PreferencesViewController: UIViewController {
 //        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController{
 //            self.navigationController?.pushViewController(vc, animated: true)
 //        }
-        countAddCart += 1
-        countOfAddToCart.text = "\(countAddCart)"
+//        countAddCart += 1
+//        countOfAddToCart.text = "\(countAddCart)"
         
       let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
       let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
-      vc.modalPresentationStyle = .fullScreen
+//      vc.modalPresentationStyle = .fullScreen
       self.navigationController?.pushViewController(vc, animated: true)
 
     }
     
-    @IBAction func backToMenuScreen(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-    }
+  @IBAction func backToMenu(_ sender: UIBarButtonItem) {
+    self.navigationController?.popViewController(animated: true)
+  }
+
 }

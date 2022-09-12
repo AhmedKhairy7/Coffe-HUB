@@ -470,18 +470,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dY7-2G-fVG">
-                                                <rect key="frame" x="144" y="370.5" width="183" height="68"/>
+                                                <rect key="frame" x="144" y="370.5" width="183" height="67"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ju-ug-4xW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="34.5" height="68"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="34.5" height="67"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="s"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="small fill"/>
                                                         <connections>
                                                             <action selector="smallCoffeeBtn:" destination="uYB-mB-qRh" eventType="touchUpInside" id="m2N-R3-4VW"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3A-dC-XGW">
-                                                        <rect key="frame" x="74.5" y="0.0" width="34" height="68"/>
+                                                        <rect key="frame" x="74.5" y="0.0" width="34" height="67"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="m"/>
                                                         <connections>
@@ -489,9 +489,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-sy-cYX">
-                                                        <rect key="frame" x="148.5" y="0.0" width="34.5" height="68"/>
+                                                        <rect key="frame" x="148.5" y="0.0" width="34.5" height="67"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="L fill"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="L"/>
                                                         <connections>
                                                             <action selector="largeCoffeeBtn:" destination="uYB-mB-qRh" eventType="touchUpInside" id="dtI-gi-TWw"/>
                                                         </connections>
@@ -739,7 +739,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="L fill" width="37" height="54"/>
+        <image name="L" width="36" height="53"/>
         <image name="add-remove items" width="105" height="34"/>
         <image name="back" width="13" height="20"/>
         <image name="coffee-lover" width="528" height="528"/>
@@ -748,7 +748,7 @@
         <image name="macciato" width="66" height="98"/>
         <image name="no " width="26" height="25"/>
         <image name="one" width="18" height="18"/>
-        <image name="s" width="26" height="32"/>
+        <image name="small fill" width="26" height="32"/>
         <image name="three" width="43" height="42"/>
         <image name="two fill" width="43" height="18"/>
         <systemColor name="systemBackgroundColor">

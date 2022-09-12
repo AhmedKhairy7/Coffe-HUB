@@ -37,62 +37,34 @@ class PreferencesViewController: UIViewController {
     var imageItem = ""
     var totalPrice  = 0
     var flag = 0
-    var coffeeSize: CoffeeSize = .large
+    var coffeeSize: CoffeeSize = .small
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.isNavigationBarHidden = false
         cartBtnOutlet.layer.cornerRadius = 25
         setDataFromMenu()
-        totalPriceLabel.text = "\(Double(price)! * 2.0)"
+        totalPriceLabel.text = "\(Double(price)! / 2.0)"
     }
     
     @IBAction func addBtn(_ sender: UIButton) {
       
         countCoffeeChoose += 1
         countCoffee.text = "\(countCoffeeChoose)"
-       // setTotalPrice()
-    if flag == 1{
-        var total = Double(price)! / 2.0 * Double(countCoffee.text!)!
-        totalPriceLabel.text = "\(total)"
-    }
-    else if flag == 2{
-        var total = Double(price)! * 2.0 * Double(countCoffee.text!)!
-        totalPriceLabel.text = "\(total)"
-    }
-    else{
-        var total = Double(price)! * Double(countCoffee.text!)!
-        totalPriceLabel.text = "\(total)"
-    
-        }
-        
-//        coffeeSize.getTotalPrice(price: Double(price)!, countCoffee: Double(countCoffee.text!)!)
+        setTotalPrice()
     }
     
     @IBAction func decreaseBtn(_ sender: UIButton) {
-        if countCoffeeChoose > 1{
+        if countCoffeeChoose > 0{
             countCoffeeChoose -= 1
             countCoffee.text = "\(countCoffeeChoose)"
-            //setTotalPrice()
-            if flag == 1{
-                var total = Double(price)! / 2.0 * Double(countCoffee.text!)!
-                totalPriceLabel.text = "\(total)"
-            }
-            else if flag == 2{
-                var total = Double(price)! * 2.0 * Double(countCoffee.text!)!
-                totalPriceLabel.text = "\(total)"
-            }
-            else{
-                var total = Double(price)! * Double(countCoffee.text!)!
-                totalPriceLabel.text = "\(total)"
-            }
-//            coffeeSize.getTotalPrice(price: Double(price)!, countCoffee: Double(countCoffee.text!)!)
+            setTotalPrice()
         }
     }
     
     
     @IBAction func smallCoffeeBtn(_ sender: UIButton) {
-        flag = 1
+        flag = 0
         coffeeSize = .small
         flagSmall = !flagSmall
       //  if coffeeSize == .small
@@ -103,8 +75,6 @@ class PreferencesViewController: UIViewController {
             flagMedium = true
             flagLarge = true
             flagSmall = false
-//            var total = Int(price)! / 2 * Int(countCoffee.text!)!
-        //    totalPriceLabel.text = "\(total)"
             setTotalPrice()
         } else {
             sender.setImage(UIImage(named: "s"), for: .normal)
@@ -118,7 +88,7 @@ class PreferencesViewController: UIViewController {
     
     @IBAction func mediumCoffeeBtn(_ sender: UIButton) {
         coffeeSize = .medium
-        flag = 0
+        flag = 1
         flagMedium = !flagMedium
         if flagMedium == false {
             sender.setImage(UIImage(named: "m fill"), for: .normal)
@@ -127,9 +97,7 @@ class PreferencesViewController: UIViewController {
             flagMedium = false
             flagLarge = true
             flagSmall = true
-//            var total = Int(price)! * Int(countCoffee.text!)!
-//            totalPriceLabel.text = "\(total)"
-            setTotalPrice()
+           setTotalPrice()
         } else {
             sender.setImage(UIImage(named: "m"), for: .normal)
             smallCoffeeOutlet.setImage(UIImage(named: "s"), for: UIControl.State.normal)
@@ -142,7 +110,7 @@ class PreferencesViewController: UIViewController {
     
     
     @IBAction func largeCoffeeBtn(_ sender: UIButton) {
-        coffeeSize = .large
+       coffeeSize = .large
         flag = 2
         flagLarge = !flagLarge
         if flagLarge == false {
@@ -152,8 +120,6 @@ class PreferencesViewController: UIViewController {
             flagMedium = true
             flagLarge = false
             flagSmall = true
-//            var total = Int(price)! * 2 * Int(countCoffee.text!)!
-//            totalPriceLabel.text = "\(total)"
             setTotalPrice()
         } else {
             sender.setImage(UIImage(named: "L"), for: .normal)
@@ -272,10 +238,10 @@ class PreferencesViewController: UIViewController {
       let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
       let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
 //      vc.modalPresentationStyle = .fullScreen
-        vc.nameCart = name
-        vc.priceCart = price
-        vc.countCoffeeCart = countCoffee.text!
-        vc.totalPriceCart = totalPriceLabel.text!
+//        vc.nameCart = name
+//        vc.priceCart = price
+//        vc.countCoffeeCart = countCoffee.text!
+//        vc.totalPriceCart = totalPriceLabel.text!
       self.navigationController?.pushViewController(vc, animated: true)
 
     }

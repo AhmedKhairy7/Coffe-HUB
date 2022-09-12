@@ -30,6 +30,7 @@
 		FC5BCE1528CE027500DB8F1E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */; };
 		FC5BCE1728CE02EF00DB8F1E /* ExtensionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */; };
 		FC5BCE1928CE0AC700DB8F1E /* ExtensionLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1828CE0AC700DB8F1E /* ExtensionLoginViewController.swift */; };
+		FC6E274028CF912B0032706F /* CoffeeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6E273F28CF912B0032706F /* CoffeeSize.swift */; };
 		FCC13A2528CCCF1600EE6D4D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */; };
 		FCC13A2728CCEC6100EE6D4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */; };
 		FCC13A2928CD20CD00EE6D4D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */; };
@@ -63,6 +64,7 @@
 		FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRegisterViewController.swift; sourceTree = "<group>"; };
 		FC5BCE1828CE0AC700DB8F1E /* ExtensionLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionLoginViewController.swift; sourceTree = "<group>"; };
+		FC6E273F28CF912B0032706F /* CoffeeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeSize.swift; sourceTree = "<group>"; };
 		FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				D16B309828C95C3E00229B5E /* MenuModel.swift */,
 				FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */,
+				FC6E273F28CF912B0032706F /* CoffeeSize.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				FC5BCE1528CE027500DB8F1E /* RegisterModel.swift in Sources */,
 				D16B309528C952EC00229B5E /* Utilities.swift in Sources */,
 				D136615428C93EE0000DD186 /* SceneDelegate.swift in Sources */,
+				FC6E274028CF912B0032706F /* CoffeeSize.swift in Sources */,
 				FC5BCE1328CE01B900DB8F1E /* CoffeHUB.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

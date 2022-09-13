@@ -13,6 +13,10 @@ class CartViewController: UIViewController {
   @IBOutlet weak var subtotalLabel: UILabel!
   @IBOutlet weak var shippingLabel: UILabel!
   @IBOutlet weak var totalPriceLabel: UILabel!
+  var nameCart = ""
+  var priceCart = ""
+  var countCoffeeCart = ""
+   var totalPriceCart = ""
   @IBAction func checkoutButton(_ sender: UIButton) {
 
   ProgressHUD.showSuccess("Your order has been received.  ☕️")
@@ -21,13 +25,23 @@ class CartViewController: UIViewController {
     self.navigationController?.popViewController(animated: true)
   }
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      self.navigationController?.isNavigationBarHidden = false
-      tableView.dataSource = self
-      tableView.delegate = self
+  override func viewDidLoad() {
+      super.viewDidLoad()
+    setup()
+    setupTableView()
+    self.navigationController?.isNavigationBarHidden = false
 
+ }
+func setup() {
+  subtotalLabel.text = totalPriceCart
+  totalPriceLabel.text = totalPriceCart + "\(5.0)"
 
-   }
+}
+private func setupTableView() {
+
+  tableView.dataSource = self
+  tableView.delegate = self
+
+}
 }
 

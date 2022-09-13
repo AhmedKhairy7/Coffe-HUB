@@ -34,7 +34,7 @@ class CartViewController: UIViewController {
  }
 func setup() {
   subtotalLabel.text = totalPriceCart
-  totalPriceLabel.text = totalPriceCart + "\(5.0)"
+  totalPriceLabel.text = "\(totalPriceCart) EG"
 
 }
 private func setupTableView() {

@@ -8,5 +8,7 @@ target 'CoffeHUB' do
   # Pods for CoffeHUB
   pod 'Alamofire'
   pod 'ProgressHUD'
+  pod 'Kingfisher'
+  pod 'SDWebImage'
 
 end

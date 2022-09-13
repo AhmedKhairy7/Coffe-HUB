@@ -9,9 +9,10 @@ import Foundation
 import UIKit
 
 
-struct Menu {
-  let photo : UIImage
-  let name : String
-  let price : String
-  
-}
+//struct Menu {
+//
+//  let photo : String
+//  let name : String
+//  let price : String
+//
+//}

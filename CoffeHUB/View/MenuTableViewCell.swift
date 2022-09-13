@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class MenuTableViewCell: UITableViewCell {
   @IBOutlet weak var menuImage: UIImageView!
@@ -23,9 +24,8 @@ class MenuTableViewCell: UITableViewCell {
   }
 
 
-  func setupCell(menu: Menu?) {
-
-     menuImage.image = menu?.photo
+  func setupCell(menu: MenuElement?) {
+    menuImage.sd_setImage(with: URL(string: menu!.image), placeholderImage: nil)
      menuLabel.text = menu?.name
   }
 

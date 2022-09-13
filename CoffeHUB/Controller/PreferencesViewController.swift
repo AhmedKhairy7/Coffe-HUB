@@ -238,10 +238,10 @@ class PreferencesViewController: UIViewController {
       let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
       let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
 //      vc.modalPresentationStyle = .fullScreen
-//        vc.nameCart = name
-//        vc.priceCart = price
-//        vc.countCoffeeCart = countCoffee.text!
-//        vc.totalPriceCart = totalPriceLabel.text!
+        vc.nameCart = name
+        vc.priceCart = price
+        vc.countCoffeeCart = countCoffee.text!
+        vc.totalPriceCart = totalPriceLabel.text!
       self.navigationController?.pushViewController(vc, animated: true)
 
     }

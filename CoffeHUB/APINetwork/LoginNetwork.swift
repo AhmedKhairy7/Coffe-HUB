@@ -24,7 +24,10 @@ class LoginNetwork{
                 switch response.result{
                 case .success(let data):
                     do{
-                        let json = try JSONSerialization.jsonObject(with: data! , options: [])
+                        guard let checkData = data else {
+                            completionHandler(.failure(.custom(message: "Please, Create Your Account")))
+                            return  }
+                        let json = try JSONSerialization.jsonObject(with: checkData , options: [])
                         print(json)
                         if response.response!.statusCode >= 200{
                             completionHandler(.success(json))

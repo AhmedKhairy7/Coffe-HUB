@@ -10,7 +10,8 @@ import UIKit
 import SDWebImage
 
 extension ViewController : TableViewConfig {
-
+  
+    
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return arrMenu.count
   }
@@ -26,12 +27,12 @@ extension ViewController : TableViewConfig {
 
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "PreferencesViewController") as! PreferencesViewController
-//    vc.name = arrMenu[indexPath.row].name
-//    vc.price = arrMenu[indexPath.row].price
+    vc.name = arrMenu[indexPath.row].name
+    vc.mediumPrice = arrMenu[indexPath.row].mediumPrice
+    vc.image = arrMenu[indexPath.row].image
     vc.modalPresentationStyle = .fullScreen
     self.navigationController?.pushViewController(vc, animated: true)
   }
-
 
 
 }

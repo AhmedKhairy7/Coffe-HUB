@@ -26,7 +26,8 @@ class ProfileViewController: UIViewController {
     super.viewDidLoad()
     setupUI()
     
-    
+      nameLabel.text = ProfileData.shared.name
+      mailLabel.text = ProfileData.shared.email
     
   }
   

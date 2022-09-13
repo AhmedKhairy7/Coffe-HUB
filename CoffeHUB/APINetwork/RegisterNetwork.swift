@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+
 class RegisterNetwork{
     func createUser(register: Register, completionHandler: @escaping (Bool, String)->()){
     let url = "https://coffee-shop2022.herokuapp.com/register"

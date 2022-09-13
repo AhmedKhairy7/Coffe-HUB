@@ -13,10 +13,11 @@ class CartViewController: UIViewController {
   @IBOutlet weak var subtotalLabel: UILabel!
   @IBOutlet weak var shippingLabel: UILabel!
   @IBOutlet weak var totalPriceLabel: UILabel!
-  var nameCart = ""
-  var priceCart = ""
-  var countCoffeeCart = ""
-   var totalPriceCart = ""
+//  var nameCart = ""
+//  var priceCart = ""
+//  var countCoffeeCart = ""
+//   var totalPriceCart = ""
+    var cartArray : [CartModel] = []
   @IBAction func checkoutButton(_ sender: UIButton) {
 
   ProgressHUD.showSuccess("Your order has been received.  ☕️")
@@ -30,11 +31,15 @@ class CartViewController: UIViewController {
     setup()
     setupTableView()
     self.navigationController?.isNavigationBarHidden = false
+      print("cartArray=\(cartArray)")
 
  }
 func setup() {
-  subtotalLabel.text = totalPriceCart
-  totalPriceLabel.text = "\(totalPriceCart) EG"
+    for item in cartArray{
+        subtotalLabel.text = item.totalPriceCart
+        totalPriceLabel.text = "\(item.totalPriceCart) EG"
+        
+    }
 
 }
 private func setupTableView() {
@@ -43,5 +48,11 @@ private func setupTableView() {
   tableView.delegate = self
 
 }
+    var total = 0.0
+    func totalPrice(){
+        for item in cartArray{
+            total += Double(item.priceCart)!
+        }
+    }
 }
 

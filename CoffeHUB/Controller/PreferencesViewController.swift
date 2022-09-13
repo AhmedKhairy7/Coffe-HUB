@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PreferencesViewController: UIViewController {
 
@@ -33,18 +34,24 @@ class PreferencesViewController: UIViewController {
     var flagTwo = true
     var flagThree = true
     var name = ""
-    var price = ""
-    var imageItem = ""
+    var mediumPrice = 0
+    var image = ""
     var totalPrice  = 0
     var flag = 0
     var coffeeSize: CoffeeSize = .small
+    var productArray : [CartModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.isNavigationBarHidden = false
         cartBtnOutlet.layer.cornerRadius = 25
         setDataFromMenu()
-        totalPriceLabel.text = "\(Double(price)! / 2.0)"
+        totalPriceLabel.text = "\(Double(mediumPrice) / 2.0)"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+     
     }
     
     @IBAction func addBtn(_ sender: UIButton) {
@@ -228,7 +235,7 @@ class PreferencesViewController: UIViewController {
     
     @IBAction func addToCart(_ sender: UIButton) {
       print("tapeed")
-      print("\(name)\(price)")
+      print("\(name)\(mediumPrice)")
 //        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartViewController") as? CartViewController{
 //            self.navigationController?.pushViewController(vc, animated: true)
 //        }
@@ -238,10 +245,19 @@ class PreferencesViewController: UIViewController {
       let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
       let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
 //      vc.modalPresentationStyle = .fullScreen
-        vc.nameCart = name
-        vc.priceCart = price
-        vc.countCoffeeCart = countCoffee.text!
-        vc.totalPriceCart = totalPriceLabel.text!
+        
+//        let objectCartModel = CartModel(nameCart: name, priceCart: "\(mediumPrice)", countCoffeeCart: countCoffee.text!, totalPriceCart: totalPriceLabel.text!)
+//        productArray.append(objectCartModel)
+//        vc.nameCart = name
+//        vc.priceCart = "\(mediumPrice)"
+//        vc.countCoffeeCart = countCoffee.text!
+//        vc.totalPriceCart = totalPriceLabel.text!
+        
+        let objectCartModel = CartModel(nameCart: name, priceCart: "\(mediumPrice)", countCoffeeCart: countCoffee.text!, totalPriceCart: totalPriceLabel.text!, imageCart: image)
+        productArray.append(objectCartModel)
+        print(productArray)
+        vc.cartArray = productArray
+  
       self.navigationController?.pushViewController(vc, animated: true)
 
     }
@@ -252,12 +268,13 @@ class PreferencesViewController: UIViewController {
 
     func setDataFromMenu(){
         nameCoffee.text = name
-        priceCoffee.text = "\(price) EG"
-        imageCoffee.image = UIImage(named: name)
+        priceCoffee.text = "\(mediumPrice) EG"
+        imageCoffee.sd_setImage(with: URL(string: image), placeholderImage: nil)
+
     }
     
     func setTotalPrice(){
-        let total = coffeeSize.getTotalPrice(price: Double(price)!, countCoffee: Double(countCoffee.text!)!)
+        let total = coffeeSize.getTotalPrice(price: Double(mediumPrice), countCoffee: Double(countCoffee.text!)!)
         totalPriceLabel.text = "\(total)"
     }
     

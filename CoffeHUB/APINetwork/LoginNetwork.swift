@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 import UIKit
 
+
 enum APIErros: Error{
     case custom(message: String)
 }
@@ -23,9 +24,9 @@ class LoginNetwork{
                 switch response.result{
                 case .success(let data):
                     do{
-                        let json = try JSONSerialization.jsonObject(with: data!, options: [])
+                        let json = try JSONSerialization.jsonObject(with: data! , options: [])
                         print(json)
-                        if response.response?.statusCode == 200{
+                        if response.response!.statusCode >= 200{
                             completionHandler(.success(json))
                         } else {
                             completionHandler(.failure(.custom(message: "Please check your network connectivity")))
@@ -39,30 +40,6 @@ class LoginNetwork{
                     completionHandler(.failure(.custom(message: "Please try again")))
                 }
             }
-        
-        
-        
-        
-        
-        
+          
     }
-        
-        
-//    let url = "https://coffee-shop2022.herokuapp.com/login"
-//        AF.request(url, method: .post, parameters: login, encoder: JSONParameterEncoder.default).response { response in
-//            switch response.result{
-//            case .success(let data):
-//                do{
-//                    let json = try JSONSerialization.jsonObject(with: data!, options: [])
-//                    print(json)
-//                } catch {
-//                    print(error.localizedDescription)
-//                }
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
-//   }
-    
-    
 }

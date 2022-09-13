@@ -38,10 +38,17 @@ class RegisterViewController: UIViewController {
             if name.isEmpty || password.isEmpty || email.isEmpty{
                 ProgressHUD.showError("Complete Enter Data !")
             } else {
-             saveDataofRegister(name: name, email: email, password: password)
-//                let register = Register(name: name, email: email, password: password)
-//                RegisterNetwork().createUser(register: register)
-                moveTOtabBar()
+                //MARK: ##CoreData
+            // saveDataofRegister(name: name, email: email, password: password)
+                let modelRegister = Register(name: name, email: email, password: password)
+                RegisterNetwork().createUser(register: modelRegister) { isSuccess, stringMessage in
+                    if isSuccess{
+                        ProgressHUD.showError(stringMessage)
+                        self.moveTOtabBar()
+                    } else {
+                        ProgressHUD.showError(stringMessage)
+                    }
+                }
             }
         }
     }

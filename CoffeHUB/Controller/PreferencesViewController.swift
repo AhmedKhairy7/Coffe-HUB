@@ -77,7 +77,7 @@ class PreferencesViewController: UIViewController {
             flagSmall = false
             setTotalPrice()
         } else {
-            sender.setImage(UIImage(named: "s"), for: .normal)
+            sender.setImage(UIImage(named: "small fill"), for: .normal)
             largeCoffeeOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
             mediumCoffeeOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
             flagMedium = false
@@ -99,7 +99,7 @@ class PreferencesViewController: UIViewController {
             flagSmall = true
            setTotalPrice()
         } else {
-            sender.setImage(UIImage(named: "m"), for: .normal)
+            sender.setImage(UIImage(named: "m fill"), for: .normal)
             smallCoffeeOutlet.setImage(UIImage(named: "s"), for: UIControl.State.normal)
             largeCoffeeOutlet.setImage(UIImage(named: "L"), for: UIControl.State.normal)
             flagMedium = true
@@ -122,7 +122,7 @@ class PreferencesViewController: UIViewController {
             flagSmall = true
             setTotalPrice()
         } else {
-            sender.setImage(UIImage(named: "L"), for: .normal)
+            sender.setImage(UIImage(named: "L fill"), for: .normal)
             smallCoffeeOutlet.setImage(UIImage(named: "s"), for: UIControl.State.normal)
             mediumCoffeeOutlet.setImage(UIImage(named: "m"), for: UIControl.State.normal)
             flagMedium = false
@@ -144,7 +144,7 @@ class PreferencesViewController: UIViewController {
             flagOne = true
             flagNo = false
         } else {
-            sender.setImage(UIImage(named: "noo"), for: .normal)
+            sender.setImage(UIImage(named: "no fill"), for: .normal)
             oneSugarOutlet.setImage(UIImage(named: "one"), for: UIControl.State.normal)
             twoSugarOutlet.setImage(UIImage(named: "two"), for: UIControl.State.normal)
             threeSugarOutlet.setImage(UIImage(named: "three"), for: UIControl.State.normal)
@@ -167,7 +167,7 @@ class PreferencesViewController: UIViewController {
             flagNo = true
             flagThree = true
         } else {
-            sender.setImage(UIImage(named: "one"), for: .normal)
+            sender.setImage(UIImage(named: "one fill"), for: .normal)
             noSugarOutlet.setImage(UIImage(named: "noo"), for: UIControl.State.normal)
             twoSugarOutlet.setImage(UIImage(named: "two"), for: UIControl.State.normal)
             threeSugarOutlet.setImage(UIImage(named: "three"), for: UIControl.State.normal)
@@ -191,7 +191,7 @@ class PreferencesViewController: UIViewController {
             flagNo = true
             flagThree = true
         } else {
-            sender.setImage(UIImage(named: "two"), for: .normal)
+            sender.setImage(UIImage(named: "two fill"), for: .normal)
             noSugarOutlet.setImage(UIImage(named: "noo"), for: UIControl.State.normal)
             oneSugarOutlet.setImage(UIImage(named: "one"), for: UIControl.State.normal)
             threeSugarOutlet.setImage(UIImage(named: "three"), for: UIControl.State.normal)
@@ -214,7 +214,7 @@ class PreferencesViewController: UIViewController {
             flagNo = true
             flagOne = true
         } else {
-            sender.setImage(UIImage(named: "three"), for: .normal)
+            sender.setImage(UIImage(named: "three fill"), for: .normal)
             noSugarOutlet.setImage(UIImage(named: "noo"), for: UIControl.State.normal)
             twoSugarOutlet.setImage(UIImage(named: "two"), for: UIControl.State.normal)
             oneSugarOutlet.setImage(UIImage(named: "one"), for: UIControl.State.normal)

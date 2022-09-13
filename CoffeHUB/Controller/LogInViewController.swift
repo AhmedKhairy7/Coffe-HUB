@@ -39,18 +39,37 @@ class LogInViewController: UIViewController {
                 print("Complete Enter Data !")
               ProgressHUD.showError("Complete Enter Data !")
             } else {
+            //MARK: ##CoreData
 //                fetchDataRegister()
-                for item in DataPersonArray{
-                    if email == item.email && password == item.password{
-                      ProgressHUD.showSucceed("Welcome again 👏🏻")
-                        moveTOtabBar()
-                    } else {
-                        print("data error enter again!")
-                      ProgressHUD.showError("data error enter again !")
-
+//                for item in DataPersonArray{
+//                    if email == item.email && password == item.password{
+//                      ProgressHUD.showSucceed("Welcome again 👏🏻")
+//                        moveTOtabBar()
+//                    } else {
+//                        print("data error enter again!")
+//                      ProgressHUD.showError("data error enter again !")
+//
+//                    }
+//                }
+                
+                let modelLogin = LoginModel(email: email, password: password)
+                LoginNetwork().loginUser(login: modelLogin) { result in
+                    switch result{
+                    case .success(let json):
+                        print(json as AnyObject)
+                        let emailUser = (json as AnyObject).value(forKey: "email") as! String
+                        let name = (json as AnyObject).value(forKey: "name") as! String
+                        let modelLoginResponse = LoginResponseModel(name: name, email: emailUser)
+                        print(modelLoginResponse)
+                        ProfileData.shared.name = name
+                        ProfileData.shared.email = email
+                    case .failure(let error):
+                        print(error.localizedDescription)
                     }
                 }
   
+                
+                
             }
         }
     }

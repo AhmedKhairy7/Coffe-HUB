@@ -10,12 +10,14 @@ import UIKit
 
 extension CartViewController : UITableViewDelegate,UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 5
+    return countCoffeeCart.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell", for: indexPath) as! CartTableViewCell
-    cell.textLabel?.text = ""
+    cell.cartName.text = nameCart
+    cell.priceLabel.text = priceCart
+    cell.cartImage.image = UIImage(named: nameCart)
     return cell
   }
 

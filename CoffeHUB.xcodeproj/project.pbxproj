@@ -33,6 +33,7 @@
 		FC6E274028CF912B0032706F /* CoffeeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6E273F28CF912B0032706F /* CoffeeSize.swift */; };
 		FC6E274428CFD28C0032706F /* RegisterNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6E274328CFD28C0032706F /* RegisterNetwork.swift */; };
 		FC6E274628CFD7730032706F /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6E274528CFD7730032706F /* LoginNetwork.swift */; };
+		FC6E274828D0057E0032706F /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6E274728D0057E0032706F /* LoginModel.swift */; };
 		FCC13A2528CCCF1600EE6D4D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */; };
 		FCC13A2728CCEC6100EE6D4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */; };
 		FCC13A2928CD20CD00EE6D4D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */; };
@@ -69,6 +70,7 @@
 		FC6E273F28CF912B0032706F /* CoffeeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeSize.swift; sourceTree = "<group>"; };
 		FC6E274328CFD28C0032706F /* RegisterNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNetwork.swift; sourceTree = "<group>"; };
 		FC6E274528CFD7730032706F /* LoginNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetwork.swift; sourceTree = "<group>"; };
+		FC6E274728D0057E0032706F /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		FCC13A2428CCCF1600EE6D4D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		FCC13A2628CCEC6100EE6D4D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				D16B309828C95C3E00229B5E /* MenuModel.swift */,
 				FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */,
 				FC6E273F28CF912B0032706F /* CoffeeSize.swift */,
+				FC6E274728D0057E0032706F /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				D1C6814E28CF4A160092FED7 /* CornerRadius.swift in Sources */,
 				FCC13A2928CD20CD00EE6D4D /* PreferencesViewController.swift in Sources */,
 				D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */,
+				FC6E274828D0057E0032706F /* LoginModel.swift in Sources */,
 				FC5BCE1728CE02EF00DB8F1E /* ExtensionRegisterViewController.swift in Sources */,
 				FCC13A2528CCCF1600EE6D4D /* LogInViewController.swift in Sources */,
 				D1C0706328CCC67400723BA7 /* ProfileViewController.swift in Sources */,

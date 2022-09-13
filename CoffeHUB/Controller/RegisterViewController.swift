@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import ProgressHUD
 
 class RegisterViewController: UIViewController {
     
@@ -35,14 +36,12 @@ class RegisterViewController: UIViewController {
     @IBAction func registerBtn(_ sender: UIButton) {
         if let name = nameTextField.text, let email = emailTextField.text, let password = passwordTextField.text{
             if name.isEmpty || password.isEmpty || email.isEmpty{
-                print("Complete Enter Data!")
+                ProgressHUD.showError("Complete Enter Data !")
             } else {
-//                saveDataofRegister(name: name, email: email, password: password)
-                RegisterNetwork().createUser(name: name, email: email, password: password)
-               goToLoginScreen()
-                
-                
-                
+             saveDataofRegister(name: name, email: email, password: password)
+//                let register = Register(name: name, email: email, password: password)
+//                RegisterNetwork().createUser(register: register)
+                moveTOtabBar()
             }
         }
     }
@@ -55,5 +54,12 @@ class RegisterViewController: UIViewController {
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController{
           self.navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    func moveTOtabBar(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "tabBarID")
+        vc.modalPresentationStyle = .fullScreen
+      self.navigationController?.pushViewController(vc, animated: true)
     }
 }

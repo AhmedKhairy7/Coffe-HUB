@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import CoreData
 
 class PreferencesViewController: UIViewController {
 
@@ -40,22 +41,19 @@ class PreferencesViewController: UIViewController {
     var flag = 0
     var coffeeSize: CoffeeSize = .small
     var productArray : [CartModel] = []
+    var appDelegate: AppDelegate!
+    var manageObjectContext: NSManagedObjectContext!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.navigationController?.isNavigationBarHidden = false
         cartBtnOutlet.layer.cornerRadius = 25
         setDataFromMenu()
         totalPriceLabel.text = "\(Double(mediumPrice) / 2.0)"
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-     
+        appDelegate = UIApplication.shared.delegate as! AppDelegate
+        manageObjectContext = appDelegate.persistentContainer.viewContext
     }
     
     @IBAction func addBtn(_ sender: UIButton) {
-      
         countCoffeeChoose += 1
         countCoffee.text = "\(countCoffeeChoose)"
         setTotalPrice()
@@ -253,10 +251,13 @@ class PreferencesViewController: UIViewController {
 //        vc.countCoffeeCart = countCoffee.text!
 //        vc.totalPriceCart = totalPriceLabel.text!
         
-        let objectCartModel = CartModel(nameCart: name, priceCart: "\(mediumPrice)", countCoffeeCart: countCoffee.text!, totalPriceCart: totalPriceLabel.text!, imageCart: image)
-        productArray.append(objectCartModel)
-        print(productArray)
-        vc.cartArray = productArray
+        
+//        let objectCartModel = CartModel(nameCart: name, priceCart: "\(mediumPrice)", countCoffeeCart: countCoffee.text!, totalPriceCart: totalPriceLabel.text!, imageCart: image)
+//        productArray.append(objectCartModel)
+//        print(productArray)
+//        vc.cartArray = productArray
+        
+          saveDataofCart(name: name, price: "\(mediumPrice) EGP", totalPrice: totalPriceLabel.text!, countCoffee: countCoffee.text!, image: image)
   
       self.navigationController?.pushViewController(vc, animated: true)
 
@@ -268,7 +269,7 @@ class PreferencesViewController: UIViewController {
 
     func setDataFromMenu(){
         nameCoffee.text = name
-        priceCoffee.text = "\(mediumPrice) EG"
+        priceCoffee.text = "\(mediumPrice) EGP"
         imageCoffee.sd_setImage(with: URL(string: image), placeholderImage: nil)
 
     }

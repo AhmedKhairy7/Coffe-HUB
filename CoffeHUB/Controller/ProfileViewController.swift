@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ProfileViewController: UIViewController {
   @IBOutlet weak var profileView: UIView!
@@ -15,22 +16,37 @@ class ProfileViewController: UIViewController {
   @IBOutlet weak var profileImage: UIImageView!
   @IBOutlet weak var phoneView: UIView!
   @IBOutlet weak var logoutButton: UIButton!
+    var appDelegate: AppDelegate!
+    var manageObjectContext: NSManagedObjectContext!
   
-  @IBAction func logoutButton(_ sender: UIButton) {
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-    let vc = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
-    vc.modalPresentationStyle = .fullScreen
-  self.navigationController?.pushViewController(vc, animated: true)
-  }
+ 
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
-    
+      appDelegate = UIApplication.shared.delegate as! AppDelegate
+      manageObjectContext = appDelegate.persistentContainer.viewContext
       nameLabel.text = ProfileData.shared.name
       mailLabel.text = ProfileData.shared.email
     
   }
-  
+    @IBAction func logoutButton(_ sender: UIButton) {
+      let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+      let vc = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
+      
+    self.navigationController?.pushViewController(vc, animated: true)
+       // self.navigationController?.popToRootViewController(animated: true)
+      deleteAllCoreData()
+    }
+    
+    public func deleteAllCoreData(){
+        let allDataCart = NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "CartEntity"))
+        do {
+            try manageObjectContext.execute(allDataCart)
+        }
+        catch let error as NSError{
+            print(error.localizedDescription)
+        }
+    }
   private func setupUI() {
     
     mailView.dropShadow()

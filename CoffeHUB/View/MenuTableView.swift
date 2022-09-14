@@ -19,7 +19,7 @@ extension ViewController : TableViewConfig {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = menuTbView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuTableViewCell
     let data = arrMenu[indexPath.row]
-    
+      cell.selectionStyle = .none
     cell.setupCell(menu: data)
     return cell
   }

@@ -31,6 +31,9 @@
 		FC39F78328D0E7C800CC4209 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78228D0E7C800CC4209 /* ProfileData.swift */; };
 		FC39F78528D0E84500CC4209 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */; };
 		FC39F78728D0F8A800CC4209 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78628D0F8A800CC4209 /* CartModel.swift */; };
+		FC39F78B28D1262D00CC4209 /* CoffeeCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78A28D1262D00CC4209 /* CoffeeCart.swift */; };
+		FC39F78D28D126EB00CC4209 /* ExtensionPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78C28D126EB00CC4209 /* ExtensionPreferenceViewController.swift */; };
+		FC39F78F28D12CA200CC4209 /* ExtensionCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78E28D12CA200CC4209 /* ExtensionCartViewController.swift */; };
 		FC5BCE1328CE01B900DB8F1E /* CoffeHUB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1128CE01B900DB8F1E /* CoffeHUB.xcdatamodeld */; };
 		FC5BCE1528CE027500DB8F1E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */; };
 		FC5BCE1728CE02EF00DB8F1E /* ExtensionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */; };
@@ -73,6 +76,9 @@
 		FC39F78228D0E7C800CC4209 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		FC39F78628D0F8A800CC4209 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
+		FC39F78A28D1262D00CC4209 /* CoffeeCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCart.swift; sourceTree = "<group>"; };
+		FC39F78C28D126EB00CC4209 /* ExtensionPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPreferenceViewController.swift; sourceTree = "<group>"; };
+		FC39F78E28D12CA200CC4209 /* ExtensionCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCartViewController.swift; sourceTree = "<group>"; };
 		FC5BCE1228CE01B900DB8F1E /* CoffeHUB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeHUB.xcdatamodel; sourceTree = "<group>"; };
 		FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRegisterViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 				D1DFD60928D067A900472363 /* MenuModelApi.swift */,
 				FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */,
 				FC39F78628D0F8A800CC4209 /* CartModel.swift */,
+				FC39F78A28D1262D00CC4209 /* CoffeeCart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +198,8 @@
 				FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */,
 				FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */,
 				FC5BCE1828CE0AC700DB8F1E /* ExtensionLoginViewController.swift */,
+				FC39F78C28D126EB00CC4209 /* ExtensionPreferenceViewController.swift */,
+				FC39F78E28D12CA200CC4209 /* ExtensionCartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,12 +371,15 @@
 				FC6E274628CFD7730032706F /* LoginNetwork.swift in Sources */,
 				D16B309228C9524600229B5E /* MenuTableView.swift in Sources */,
 				FC39F78528D0E84500CC4209 /* LoginResponseModel.swift in Sources */,
+				FC39F78F28D12CA200CC4209 /* ExtensionCartViewController.swift in Sources */,
 				D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */,
 				FC5BCE1528CE027500DB8F1E /* RegisterModel.swift in Sources */,
 				FC39F78328D0E7C800CC4209 /* ProfileData.swift in Sources */,
 				D16B309528C952EC00229B5E /* Utilities.swift in Sources */,
 				D136615428C93EE0000DD186 /* SceneDelegate.swift in Sources */,
 				FC6E274028CF912B0032706F /* CoffeeSize.swift in Sources */,
+				FC39F78D28D126EB00CC4209 /* ExtensionPreferenceViewController.swift in Sources */,
+				FC39F78B28D1262D00CC4209 /* CoffeeCart.swift in Sources */,
 				FC5BCE1328CE01B900DB8F1E /* CoffeHUB.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

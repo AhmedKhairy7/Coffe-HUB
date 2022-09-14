@@ -22,7 +22,7 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        gifLogin()
+        gifLogin()
         deleteBorderTextField()
         self.navigationController?.isNavigationBarHidden = true
         logInOutlet.layer.cornerRadius = 25
@@ -92,9 +92,9 @@ class LogInViewController: UIViewController {
       self.navigationController?.pushViewController(vc, animated: true)
     }
 
-//  private func gifLogin() {
-//    let gif = UIImage.gifImageWithName("65499-drip-coffee")
-//    imageView.image = gif
-//  }
+  private func gifLogin() {
+    let gif = UIImage.gifImageWithName("65499-drip-coffee")
+    imageView.image = gif
+  }
   
 }

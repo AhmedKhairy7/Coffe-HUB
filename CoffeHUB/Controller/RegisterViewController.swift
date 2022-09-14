@@ -44,6 +44,8 @@ class RegisterViewController: UIViewController {
                 RegisterNetwork().createUser(register: modelRegister) { isSuccess, stringMessage in
                     if isSuccess{
                         ProgressHUD.showSuccess(stringMessage)
+                      ProfileData.shared.name = name
+                      ProfileData.shared.email = email
                         self.moveTOtabBar()
                     } else {
                         ProgressHUD.showError(stringMessage)

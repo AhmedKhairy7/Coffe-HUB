@@ -8,10 +8,10 @@
 import Foundation
 
 struct CoffeeCart{
-    var name: String
-    var price: String
-    var totalPrice: String
-    var countCoffee: String
-    var image: String
-    
+  var name: String
+  var price: String
+  var totalPrice: String
+  var countCoffee: String
+  var image: String
+  
 }

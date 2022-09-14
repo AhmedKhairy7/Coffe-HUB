@@ -8,8 +8,8 @@
 import Foundation
 
 enum CoffeeSugar{
-    case no
-    case one
-    case two
-    case three
+  case no
+  case one
+  case two
+  case three
 }

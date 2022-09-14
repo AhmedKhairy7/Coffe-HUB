@@ -15,9 +15,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         changeCarveOfBtn()
-
         self.navigationController?.isNavigationBarHidden = true
-
     }
 
 

@@ -8,9 +8,9 @@
 import Foundation
 
 struct CartModel{
-    var nameCart: String
-    var priceCart: String
-    var countCoffeeCart: String
-    var totalPriceCart: String
-    var imageCart: String
+  var nameCart: String
+  var priceCart: String
+  var countCoffeeCart: String
+  var totalPriceCart: String
+  var imageCart: String
 }

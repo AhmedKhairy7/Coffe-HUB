@@ -10,5 +10,6 @@ target 'CoffeHUB' do
   pod 'ProgressHUD'
   pod 'Kingfisher'
   pod 'SDWebImage'
+  pod 'IQKeyboardManagerSwift'
 
 end

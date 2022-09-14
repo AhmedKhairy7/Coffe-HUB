@@ -7,9 +7,11 @@
 
 import Foundation
 import UIKit
+
+
 extension UIView {
-  func cornerRadius() {
-    self.layer.cornerRadius = 20
+ func cornerRadius() {
+  self.layer.cornerRadius = 20
 
   }
 

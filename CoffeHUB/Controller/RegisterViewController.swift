@@ -24,39 +24,13 @@ class RegisterViewController: UIViewController {
         appDelegate = UIApplication.shared.delegate as! AppDelegate
         manageObjectContext = appDelegate.persistentContainer.viewContext
         deleteBorderTextField()
-        registerBtnOutlet.layer.cornerRadius = 20
+        registerBtnOutlet.cornerRadius()
     }
     
     func deleteBorderTextField(){
         emailTextField.borderStyle = .none
         passwordTextField.borderStyle = .none
         nameTextField.borderStyle = .none
-    }
-  
-    @IBAction func registerBtn(_ sender: UIButton) {
-        if let name = nameTextField.text, let email = emailTextField.text, let password = passwordTextField.text{
-            if name.isEmpty || password.isEmpty || email.isEmpty{
-                ProgressHUD.showError("Complete Enter Data !")
-            } else {
-                //MARK: ##CoreData
-            // saveDataofRegister(name: name, email: email, password: password)
-                let modelRegister = Register(name: name, email: email, password: password)
-                RegisterNetwork().createUser(register: modelRegister) { isSuccess, stringMessage in
-                    if isSuccess{
-                        ProgressHUD.showSuccess(stringMessage)
-                      ProfileData.shared.name = name
-                      ProfileData.shared.email = email
-                        self.moveTOtabBar()
-                    } else {
-                        ProgressHUD.showError(stringMessage)
-                    }
-                }
-            }
-        }
-    }
-    
-    @IBAction func logInBtn(_ sender: UIButton) {
-        goToLoginScreen()
     }
 
     func goToLoginScreen(){
@@ -71,4 +45,34 @@ class RegisterViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen
       self.navigationController?.pushViewController(vc, animated: true)
     }
-}
+
+       private func register() {
+        if let name = nameTextField.text, let email = emailTextField.text, let password = passwordTextField.text{
+            if name.isEmpty || password.isEmpty || email.isEmpty{
+                ProgressHUD.showError("Complete Enter Data !")
+            } else {
+                //MARK: This code fore CoreData
+            // saveDataofRegister(name: name, email: email, password: password)
+                let modelRegister = Register(name: name, email: email, password: password)
+              APICaller().createUser(register: modelRegister) { isSuccess, stringMessage in
+                    if isSuccess{
+                        ProgressHUD.showSuccess(stringMessage)
+                      ProfileData.shared.name = name
+                      ProfileData.shared.email = email
+                        self.moveTOtabBar()
+                    } else {
+                        ProgressHUD.showError(stringMessage)
+                    }
+                }
+            }
+        }
+    }
+
+  @IBAction func registerBtn(_ sender: UIButton) {
+    register()
+  }
+  @IBAction func logInBtn(_ sender: UIButton) {
+      goToLoginScreen()
+   }
+ }
+

@@ -51,11 +51,10 @@ class ProfileViewController: UIViewController {
     
     mailView.dropShadow()
     phoneView.dropShadow()
-    phoneView.layer.cornerRadius = 25
-    mailView.layer.cornerRadius = 25
-    logoutButton.layer.cornerRadius = 20
+    phoneView.cornerRadius()
+    mailView.cornerRadius()
+    logoutButton.cornerRadius()
     logoutButton.dropShadow()
-    profileImage.cornerRadius()
     
     
   }

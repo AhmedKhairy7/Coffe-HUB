@@ -43,7 +43,7 @@ class RegisterViewController: UIViewController {
                 let modelRegister = Register(name: name, email: email, password: password)
                 RegisterNetwork().createUser(register: modelRegister) { isSuccess, stringMessage in
                     if isSuccess{
-                        ProgressHUD.showError(stringMessage)
+                        ProgressHUD.showSuccess(stringMessage)
                         self.moveTOtabBar()
                     } else {
                         ProgressHUD.showError(stringMessage)

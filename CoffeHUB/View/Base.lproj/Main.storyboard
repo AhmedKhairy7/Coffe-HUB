@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T9O-vt-oq5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T9O-vt-oq5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -114,10 +114,10 @@
                                                     <action selector="registerBtn:" destination="eht-0e-dRk" eventType="touchUpInside" id="2US-ei-l1f"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-lover" translatesAutoresizingMaskIntoConstraints="NO" id="2da-EY-4Dp">
-                                                <rect key="frame" x="121" y="20" width="172" height="100"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="65499-drip-coffee.gif" translatesAutoresizingMaskIntoConstraints="NO" id="2da-EY-4Dp">
+                                                <rect key="frame" x="119" y="12" width="177" height="140"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="eL7-iI-9EG"/>
+                                                    <constraint firstAttribute="height" constant="140" id="eL7-iI-9EG"/>
                                                 </constraints>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                             </imageView>
@@ -138,8 +138,8 @@
                                             <constraint firstItem="9Do-6s-1S0" firstAttribute="top" secondItem="rTj-Es-YDI" secondAttribute="bottom" constant="38.5" id="JW1-Ig-5mh"/>
                                             <constraint firstAttribute="trailing" secondItem="BMI-cA-sVI" secondAttribute="trailing" constant="20" id="RZ8-vI-CSr"/>
                                             <constraint firstItem="nuD-DG-EEr" firstAttribute="leading" secondItem="KvY-m5-Mtd" secondAttribute="leading" constant="20" id="Urg-Ak-wHX"/>
-                                            <constraint firstItem="2da-EY-4Dp" firstAttribute="top" secondItem="KvY-m5-Mtd" secondAttribute="top" constant="20" id="ViH-Kc-p2C"/>
-                                            <constraint firstAttribute="trailing" secondItem="2da-EY-4Dp" secondAttribute="trailing" constant="121" id="XCN-30-Wxd"/>
+                                            <constraint firstItem="2da-EY-4Dp" firstAttribute="top" secondItem="KvY-m5-Mtd" secondAttribute="top" constant="12" id="ViH-Kc-p2C"/>
+                                            <constraint firstAttribute="trailing" secondItem="2da-EY-4Dp" secondAttribute="trailing" constant="118" id="XCN-30-Wxd"/>
                                             <constraint firstItem="nuD-DG-EEr" firstAttribute="top" secondItem="KxJ-gm-u2c" secondAttribute="bottom" id="Xst-wQ-nhF"/>
                                             <constraint firstItem="KxJ-gm-u2c" firstAttribute="top" secondItem="cEU-e0-QX5" secondAttribute="bottom" constant="5" id="bNN-b4-d9o"/>
                                             <constraint firstAttribute="trailing" secondItem="rTj-Es-YDI" secondAttribute="trailing" constant="20" id="bdZ-IZ-Bod"/>
@@ -148,10 +148,10 @@
                                             <constraint firstItem="7Mc-W8-emo" firstAttribute="leading" secondItem="KvY-m5-Mtd" secondAttribute="leading" constant="20" id="hDl-gs-1XD"/>
                                             <constraint firstAttribute="height" constant="700" id="k1O-vR-fNP"/>
                                             <constraint firstItem="YbT-bv-GXT" firstAttribute="leading" secondItem="KvY-m5-Mtd" secondAttribute="leading" constant="20" id="kab-vx-caR"/>
-                                            <constraint firstItem="2da-EY-4Dp" firstAttribute="leading" secondItem="KvY-m5-Mtd" secondAttribute="leading" constant="121" id="l33-zi-Wgk"/>
+                                            <constraint firstItem="2da-EY-4Dp" firstAttribute="leading" secondItem="KvY-m5-Mtd" secondAttribute="leading" constant="119" id="l33-zi-Wgk"/>
                                             <constraint firstItem="7Mc-W8-emo" firstAttribute="top" secondItem="nuD-DG-EEr" secondAttribute="bottom" constant="102.5" id="l79-2y-Jcl"/>
                                             <constraint firstAttribute="trailing" secondItem="cEU-e0-QX5" secondAttribute="trailing" constant="20" id="lyR-D9-tyN"/>
-                                            <constraint firstItem="rTj-Es-YDI" firstAttribute="top" secondItem="2da-EY-4Dp" secondAttribute="bottom" constant="40" id="nLL-SJ-0Ma"/>
+                                            <constraint firstItem="rTj-Es-YDI" firstAttribute="top" secondItem="2da-EY-4Dp" secondAttribute="bottom" constant="8" id="nLL-SJ-0Ma"/>
                                             <constraint firstItem="BMI-cA-sVI" firstAttribute="leading" secondItem="KvY-m5-Mtd" secondAttribute="leading" constant="250" id="nPJ-Gf-Hel"/>
                                             <constraint firstItem="rTj-Es-YDI" firstAttribute="leading" secondItem="KvY-m5-Mtd" secondAttribute="leading" constant="20" id="r9l-1U-ZXe"/>
                                         </constraints>
@@ -178,6 +178,7 @@
                     <navigationItem key="navigationItem" id="WZl-sZ-RL1"/>
                     <connections>
                         <outlet property="emailTextField" destination="YbT-bv-GXT" id="SMv-zc-xg0"/>
+                        <outlet property="imageView" destination="2da-EY-4Dp" id="v27-xO-6CG"/>
                         <outlet property="logInOutlet" destination="7Mc-W8-emo" id="4Hh-Uk-bNC"/>
                         <outlet property="passwordTextField" destination="KxJ-gm-u2c" id="1GZ-Ed-ZWC"/>
                     </connections>
@@ -739,10 +740,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="65499-drip-coffee.gif" width="640" height="640"/>
         <image name="L" width="36" height="53"/>
         <image name="add-remove items" width="105" height="34"/>
         <image name="back" width="13" height="20"/>
-        <image name="coffee-lover" width="528" height="528"/>
         <image name="header11" width="377" height="183"/>
         <image name="m" width="30" height="45"/>
         <image name="macciato" width="66" height="98"/>

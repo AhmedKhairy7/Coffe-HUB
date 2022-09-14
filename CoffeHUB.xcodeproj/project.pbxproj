@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		159B6FAC297492C7E42787F6 /* Pods_CoffeHUB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FBB031D2FD53A4A01E353 /* Pods_CoffeHUB.framework */; };
+		D105C47D28D1B92A00CC1730 /* 91070-hot-smiling-coffee-good-morning.gif in Resources */ = {isa = PBXBuildFile; fileRef = D105C47C28D1B92A00CC1730 /* 91070-hot-smiling-coffee-good-morning.gif */; };
+		D105C47F28D1B93A00CC1730 /* 65499-drip-coffee.gif in Resources */ = {isa = PBXBuildFile; fileRef = D105C47E28D1B93A00CC1730 /* 65499-drip-coffee.gif */; };
 		D136615228C93EE0000DD186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136615128C93EE0000DD186 /* AppDelegate.swift */; };
 		D136615428C93EE0000DD186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136615328C93EE0000DD186 /* SceneDelegate.swift */; };
 		D136615628C93EE0000DD186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136615528C93EE0000DD186 /* ViewController.swift */; };
@@ -18,6 +20,7 @@
 		D16B309528C952EC00229B5E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309428C952EC00229B5E /* Utilities.swift */; };
 		D16B309728C9557200229B5E /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309628C9557200229B5E /* MenuTableViewCell.swift */; };
 		D16B309928C95C3E00229B5E /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309828C95C3E00229B5E /* MenuModel.swift */; };
+		D18B3A9728D1B9B500D9D847 /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B3A9628D1B9B500D9D847 /* GIF.swift */; };
 		D1C0706128CCC5E900723BA7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0706028CCC5E900723BA7 /* WelcomeViewController.swift */; };
 		D1C0706328CCC67400723BA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0706228CCC67400723BA7 /* ProfileViewController.swift */; };
 		D1C6814E28CF4A160092FED7 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6814D28CF4A160092FED7 /* CornerRadius.swift */; };
@@ -51,6 +54,8 @@
 		6822F6B42028442EBEB6D1FA /* Pods-CoffeHUB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeHUB.debug.xcconfig"; path = "Target Support Files/Pods-CoffeHUB/Pods-CoffeHUB.debug.xcconfig"; sourceTree = "<group>"; };
 		7B6564AF62F26695666005C3 /* Pods-CoffeHUB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeHUB.release.xcconfig"; path = "Target Support Files/Pods-CoffeHUB/Pods-CoffeHUB.release.xcconfig"; sourceTree = "<group>"; };
 		A29FBB031D2FD53A4A01E353 /* Pods_CoffeHUB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeHUB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D105C47C28D1B92A00CC1730 /* 91070-hot-smiling-coffee-good-morning.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "91070-hot-smiling-coffee-good-morning.gif"; sourceTree = "<group>"; };
+		D105C47E28D1B93A00CC1730 /* 65499-drip-coffee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "65499-drip-coffee.gif"; sourceTree = "<group>"; };
 		D136614E28C93EE0000DD186 /* CoffeHUB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeHUB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D136615128C93EE0000DD186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D136615328C93EE0000DD186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 		D16B309428C952EC00229B5E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D16B309628C9557200229B5E /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		D16B309828C95C3E00229B5E /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		D18B3A9628D1B9B500D9D847 /* GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
 		D1C0706028CCC5E900723BA7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D1C0706228CCC67400723BA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D1C6814D28CF4A160092FED7 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
@@ -148,8 +154,10 @@
 				D16B309328C9529000229B5E /* Utilities */,
 				D136616728C94FAD000DD186 /* Controller */,
 				D136616628C94FA3000DD186 /* View */,
-				D136615A28C93EE2000DD186 /* Assets.xcassets */,
+				D18B3A9828D1BB6100D9D847 /* Assets */,
 				D136615F28C93EE2000DD186 /* Info.plist */,
+				D136615328C93EE0000DD186 /* SceneDelegate.swift */,
+				D136615128C93EE0000DD186 /* AppDelegate.swift */,
 				FC5BCE1128CE01B900DB8F1E /* CoffeHUB.xcdatamodeld */,
 			);
 			path = CoffeHUB;
@@ -187,8 +195,6 @@
 		D136616728C94FAD000DD186 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D136615128C93EE0000DD186 /* AppDelegate.swift */,
-				D136615328C93EE0000DD186 /* SceneDelegate.swift */,
 				D136615528C93EE0000DD186 /* ViewController.swift */,
 				D1ED9B3B28CC91F000823328 /* CartViewController.swift */,
 				D1C0706028CCC5E900723BA7 /* WelcomeViewController.swift */,
@@ -212,11 +218,22 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		D18B3A9828D1BB6100D9D847 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D136615A28C93EE2000DD186 /* Assets.xcassets */,
+				D105C47C28D1B92A00CC1730 /* 91070-hot-smiling-coffee-good-morning.gif */,
+				D105C47E28D1B93A00CC1730 /* 65499-drip-coffee.gif */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		D1C6814C28CF4A020092FED7 /* Extenstion */ = {
 			isa = PBXGroup;
 			children = (
 				D1C6814D28CF4A160092FED7 /* CornerRadius.swift */,
 				D1DFD5FF28CF564600472363 /* DropShadow.swift */,
+				D18B3A9628D1B9B500D9D847 /* GIF.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -293,7 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D136615E28C93EE2000DD186 /* LaunchScreen.storyboard in Resources */,
+				D105C47D28D1B92A00CC1730 /* 91070-hot-smiling-coffee-good-morning.gif in Resources */,
 				D136615B28C93EE2000DD186 /* Assets.xcassets in Resources */,
+				D105C47F28D1B93A00CC1730 /* 65499-drip-coffee.gif in Resources */,
 				D1ED9B3A28CC73FD00823328 /* Secound.storyboard in Resources */,
 				D136615928C93EE0000DD186 /* Main.storyboard in Resources */,
 			);
@@ -350,6 +369,7 @@
 			files = (
 				FC6E274428CFD28C0032706F /* RegisterNetwork.swift in Sources */,
 				D1DFD60A28D067A900472363 /* MenuModelApi.swift in Sources */,
+				D18B3A9728D1B9B500D9D847 /* GIF.swift in Sources */,
 				D136615628C93EE0000DD186 /* ViewController.swift in Sources */,
 				D1DFD60028CF564600472363 /* DropShadow.swift in Sources */,
 				D136615228C93EE0000DD186 /* AppDelegate.swift in Sources */,

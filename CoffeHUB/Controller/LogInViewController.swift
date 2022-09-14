@@ -11,7 +11,8 @@ import ProgressHUD
 
 class LogInViewController: UIViewController {
     
-    @IBOutlet weak var logInOutlet: UIButton!
+  @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var logInOutlet: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     var appDelegate: AppDelegate!
@@ -21,6 +22,7 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        gifLogin()
         deleteBorderTextField()
         self.navigationController?.isNavigationBarHidden = true
         logInOutlet.layer.cornerRadius = 25
@@ -89,4 +91,9 @@ class LogInViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen
       self.navigationController?.pushViewController(vc, animated: true)
     }
+
+  private func gifLogin() {
+    let gif = UIImage.gifImageWithName("65499-drip-coffee")
+    imageView.image = gif
+  }
 }

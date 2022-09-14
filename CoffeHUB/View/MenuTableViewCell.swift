@@ -14,20 +14,15 @@ class MenuTableViewCell: UITableViewCell {
   @IBOutlet weak var menuLabel: UILabel!
 
   override func awakeFromNib() {
-    super.awakeFromNib()
-
-  }
+    super.awakeFromNib()  }
 
   override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-
-  }
+    super.setSelected(selected, animated: animated) }
 
 
   func setupCell(menu: MenuElement?) {
     menuImage.sd_setImage(with: URL(string: menu!.image), placeholderImage: nil)
-     menuLabel.text = menu?.name
-  }
-
-  
+    menuLabel.text = menu?.name
+    
+   }
 }

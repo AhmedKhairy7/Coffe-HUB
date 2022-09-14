@@ -31,6 +31,7 @@
 		D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3B28CC91F000823328 /* CartViewController.swift */; };
 		D1ED9B3E28CC926500823328 /* CartTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3D28CC926500823328 /* CartTableView.swift */; };
 		D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */; };
+		FC1F84F828D227AC00B3CEF4 /* CoffeeSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F84F728D227AC00B3CEF4 /* CoffeeSugar.swift */; };
 		FC39F78328D0E7C800CC4209 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78228D0E7C800CC4209 /* ProfileData.swift */; };
 		FC39F78528D0E84500CC4209 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */; };
 		FC39F78728D0F8A800CC4209 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78628D0F8A800CC4209 /* CartModel.swift */; };
@@ -79,6 +80,7 @@
 		D1ED9B3B28CC91F000823328 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		D1ED9B3D28CC926500823328 /* CartTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableView.swift; sourceTree = "<group>"; };
 		D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		FC1F84F728D227AC00B3CEF4 /* CoffeeSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeSugar.swift; sourceTree = "<group>"; };
 		FC39F78228D0E7C800CC4209 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		FC39F78628D0F8A800CC4209 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */,
 				FC39F78628D0F8A800CC4209 /* CartModel.swift */,
 				FC39F78A28D1262D00CC4209 /* CoffeeCart.swift */,
+				FC1F84F728D227AC00B3CEF4 /* CoffeeSugar.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1F84F828D227AC00B3CEF4 /* CoffeeSugar.swift in Sources */,
 				FC6E274428CFD28C0032706F /* RegisterNetwork.swift in Sources */,
 				D1DFD60A28D067A900472363 /* MenuModelApi.swift in Sources */,
 				D18B3A9728D1B9B500D9D847 /* GIF.swift in Sources */,

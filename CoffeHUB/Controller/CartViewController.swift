@@ -43,7 +43,6 @@ class CartViewController: UIViewController {
       print("cartArray=\(cartArray)")
       appDelegate = UIApplication.shared.delegate as! AppDelegate
       manageObjectContext = appDelegate.persistentContainer.viewContext
-
  }
 
     override func viewWillAppear(_ animated: Bool) {

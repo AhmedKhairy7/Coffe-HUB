@@ -59,6 +59,7 @@ class LogInViewController: UIViewController {
                     switch result{
                     case .success(let json):
                         print(json as AnyObject)
+
                         let emailUser = (json as AnyObject).value(forKey: "email") as! String
                         let name = (json as AnyObject).value(forKey: "name") as! String
                         let modelLoginResponse = LoginResponseModel(name: name, email: emailUser)

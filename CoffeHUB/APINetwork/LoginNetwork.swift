@@ -14,9 +14,10 @@ enum APIErros: Error{
     case custom(message: String)
 }
 
-typealias Handler = (Swift.Result<Any?, APIErros>) -> Void
+
 
 class LoginNetwork{
+  
     func loginUser(login: LoginModel, completionHandler: @escaping Handler){
         
         let url = "https://coffee-shop2022.herokuapp.com/login"

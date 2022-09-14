@@ -9,3 +9,4 @@ import Foundation
 import UIKit
 
 typealias TableViewConfig = UITableViewDelegate & UITableViewDataSource
+typealias Handler = (Swift.Result<Any?, APIErros>) -> Void

@@ -11,6 +11,7 @@ import Alamofire
   // MARK: GET API
 
 protocol APICallerProtocol {}
+// Delete
 
   final class APICaller {
 
@@ -24,7 +25,7 @@ protocol APICallerProtocol {}
     enum APIError: Error {
       case failedToGetData
     }
-
+      // best --
   func getAllUsreDataAF(completion: @escaping (Result<[MenuElement], Error>) -> Void){
     AF.request(Constants.baseAPIURL).response { response in
       if let data = response.data {

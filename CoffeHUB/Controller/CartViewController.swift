@@ -29,7 +29,7 @@ class CartViewController: UIViewController {
       tableView.reloadData()
       subtotalLabel.text = "0.0 EGP"
       totalPriceLabel.text = "0.0 EGP"
-      
+    self.navigationController?.popToRootViewController(animated: true)
   }
   @IBAction func backToMenu(_ sender: UIBarButtonItem) {
     self.navigationController?.popViewController(animated: true)

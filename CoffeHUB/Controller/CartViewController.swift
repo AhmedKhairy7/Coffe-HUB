@@ -80,3 +80,20 @@ private func setupTableView() {
     }
 }
 
+
+extension CartViewController: CartDataProtocol{
+    func add(count: String, total: String) {
+        let price = CartData.shared.price ?? "0.0"
+        let t = Double(total)! + Double(price)!
+        totalPriceLabel.text = "\(t)"
+        subtotalLabel.text = "\(t)"
+    }
+    
+    func sub(count: String, total: String) {
+        let price = CartData.shared.price ?? "0.0"
+        let count = CartData.shared.countCoffee ?? "0"
+        let t = Double(total)! - Double(price)!
+        totalPriceLabel.text = "\(t)"
+        subtotalLabel.text = "\(t)"
+    }
+}

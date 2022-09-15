@@ -32,6 +32,7 @@
 		D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3B28CC91F000823328 /* CartViewController.swift */; };
 		D1ED9B3E28CC926500823328 /* CartTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3D28CC926500823328 /* CartTableView.swift */; };
 		D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */; };
+		FC0C758828D2AE4000ACB9E4 /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C758728D2AE4000ACB9E4 /* CartData.swift */; };
 		FC1F84F828D227AC00B3CEF4 /* CoffeeSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F84F728D227AC00B3CEF4 /* CoffeeSugar.swift */; };
 		FC39F78328D0E7C800CC4209 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78228D0E7C800CC4209 /* ProfileData.swift */; };
 		FC39F78528D0E84500CC4209 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */; };
@@ -80,6 +81,7 @@
 		D1ED9B3B28CC91F000823328 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		D1ED9B3D28CC926500823328 /* CartTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableView.swift; sourceTree = "<group>"; };
 		D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		FC0C758728D2AE4000ACB9E4 /* CartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
 		FC1F84F728D227AC00B3CEF4 /* CoffeeSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeSugar.swift; sourceTree = "<group>"; };
 		FC39F78228D0E7C800CC4209 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				FC39F78628D0F8A800CC4209 /* CartModel.swift */,
 				FC39F78A28D1262D00CC4209 /* CoffeeCart.swift */,
 				FC1F84F728D227AC00B3CEF4 /* CoffeeSugar.swift */,
+				FC0C758728D2AE4000ACB9E4 /* CartData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				D1C6814E28CF4A160092FED7 /* CornerRadius.swift in Sources */,
 				D182B11128D26F030040DAB4 /* ApiError.swift in Sources */,
 				D182B10F28D25A3E0040DAB4 /* Constant.swift in Sources */,
+				FC0C758828D2AE4000ACB9E4 /* CartData.swift in Sources */,
 				FCC13A2928CD20CD00EE6D4D /* PreferencesViewController.swift in Sources */,
 				D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */,
 				FC6E274828D0057E0032706F /* LoginModel.swift in Sources */,

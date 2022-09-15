@@ -205,7 +205,12 @@ class PreferencesViewController: UIViewController {
     print("\(name)\(mediumPrice)")
     let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
-    saveDataofCart(name: name, price: "\(mediumPrice) EGP", totalPrice: totalPriceLabel.text!, countCoffee: countCoffee.text!, image: image)
+    saveDataofCart(name: name, price: "\(mediumPrice)", totalPrice: totalPriceLabel.text!, countCoffee: countCoffee.text!, image: image)
+      CartData.shared.name = name
+      CartData.shared.price = "\(mediumPrice)"
+      CartData.shared.totalPrice = totalPriceLabel.text!
+      CartData.shared.countCoffee = countCoffee.text!
+      CartData.shared.image = image
     self.navigationController?.pushViewController(vc, animated: true)
   }
 

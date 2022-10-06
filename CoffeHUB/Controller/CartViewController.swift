@@ -66,7 +66,7 @@ class CartViewController: UIViewController {
         let objectCoffeeCart = CoffeeCart(name: name, type: type, price: price, totalPrice: totalPrice, countCoffee: countCoffee, image: image)
         cartNewArray.append(objectCoffeeCart)
       }
-      
+        tableView.reloadData()
     }
     catch let error as NSError{
       print(error.localizedDescription)
@@ -132,9 +132,11 @@ extension CartViewController : UITableViewDelegate,UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
-      
-      cartNewArray.remove(at: indexPath.row)
-      manageObjectContext.delete(coreDataCart[indexPath.row])
+        let newTotal = total - Double(cartNewArray[indexPath.row].price)! * Double(cartNewArray[indexPath.row].countCoffee)!
+        totalPriceLabel.text = "\(newTotal)"
+        subtotalLabel.text = "\(newTotal)"
+            cartNewArray.remove(at: indexPath.row)
+            manageObjectContext.delete(coreDataCart[indexPath.row])
       do{
         try manageObjectContext.save()
       } catch let error as NSError{

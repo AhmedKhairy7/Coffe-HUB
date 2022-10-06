@@ -16,14 +16,6 @@ protocol APICallerProtocol {
 
 struct APICaller:APICallerProtocol {
 
-  //  let service: Session?
-  //
-  //  init(service:Session? = Session.init(configuration: URLSessionConfiguration.default,
-  //                                       startRequestsImmediately: true,
-  //                                       cachedResponseHandler: nil)) {
-  //    self.service = service
-  //  }
-
   func createUser(method:String? = "register" ,register: Register, completionHandler: @escaping (Bool, String) -> ()) {
 
     AF.request(Constants.baseAPIURL + "\(method ?? "")", method: .post, parameters: register, encoder: JSONParameterEncoder.default).response { response in

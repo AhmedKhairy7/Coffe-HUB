@@ -19,7 +19,7 @@ class ProfileViewController: UIViewController {
   var appDelegate: AppDelegate!
   var manageObjectContext: NSManagedObjectContext!
   
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
@@ -27,14 +27,14 @@ class ProfileViewController: UIViewController {
     appDelegate = UIApplication.shared.delegate as! AppDelegate
     manageObjectContext = appDelegate.persistentContainer.viewContext
   }
-
+  
   @IBAction func logoutButton(_ sender: UIButton) {
     let storyBoard : UIStoryboard = UIStoryboard(name: "Auth", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
     self.navigationController?.pushViewController(vc, animated: true)
     deleteAllCoreData()
   }
-
+  
   public func deleteAllCoreData(){
     let allDataCart = NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "CartEntity"))
     do {
@@ -44,7 +44,7 @@ class ProfileViewController: UIViewController {
       print(error.localizedDescription)
     }
   }
-
+  
   private func setupUI() {
     mailView.dropShadow()
     phoneView.dropShadow()
@@ -53,7 +53,7 @@ class ProfileViewController: UIViewController {
     logoutButton.cornerRadius()
     logoutButton.dropShadow()
   }
-
+  
   private func fetchProfileData(){
     // User defualts
     nameLabel.text =  UserDefaults.standard.string(forKey: "name") as! String

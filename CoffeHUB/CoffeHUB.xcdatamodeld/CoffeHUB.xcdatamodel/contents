@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="CartEntity" representedClassName="CartEntity" syncable="YES" codeGenerationType="class">
         <attribute name="countCoffee" optional="YES" attributeType="String"/>
         <attribute name="image" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="price" optional="YES" attributeType="String"/>
         <attribute name="totalPrice" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="CoffeeEntity" representedClassName="CoffeeEntity" syncable="YES" codeGenerationType="class">
         <attribute name="email" optional="YES" attributeType="String"/>
@@ -13,7 +14,7 @@
         <attribute name="password" optional="YES" attributeType="String"/>
     </entity>
     <elements>
+        <element name="CartEntity" positionX="-54" positionY="18" width="128" height="119"/>
         <element name="CoffeeEntity" positionX="-63" positionY="-18" width="128" height="74"/>
-        <element name="CartEntity" positionX="-54" positionY="18" width="128" height="104"/>
     </elements>
 </model>

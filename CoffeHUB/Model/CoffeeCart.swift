@@ -9,6 +9,7 @@ import Foundation
 
 struct CoffeeCart{
   var name: String
+  var type: String
   var price: String
   var totalPrice: String
   var countCoffee: String

@@ -43,7 +43,7 @@ class LogInViewController: UIViewController {
   }
 
   private func gifLogin() {
-    let gif = UIImage.gifImageWithName("65499-drip-coffee")
+    let gif = UIImage.gifImageWithName("Login")
     imageView.image = gif
   }
 

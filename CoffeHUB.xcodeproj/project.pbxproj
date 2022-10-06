@@ -16,6 +16,7 @@
 		D136615928C93EE0000DD186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D136615728C93EE0000DD186 /* Main.storyboard */; };
 		D136615B28C93EE2000DD186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D136615A28C93EE2000DD186 /* Assets.xcassets */; };
 		D136615E28C93EE2000DD186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D136615C28C93EE2000DD186 /* LaunchScreen.storyboard */; };
+		D1451E8D28EDFF5E00CFC7B6 /* Login.gif in Resources */ = {isa = PBXBuildFile; fileRef = D1451E8C28EDFF5D00CFC7B6 /* Login.gif */; };
 		D16B309228C9524600229B5E /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309128C9524600229B5E /* MenuTableView.swift */; };
 		D16B309528C952EC00229B5E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309428C952EC00229B5E /* Utilities.swift */; };
 		D16B309728C9557200229B5E /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B309628C9557200229B5E /* MenuTableViewCell.swift */; };
@@ -39,7 +40,6 @@
 		FC39F78728D0F8A800CC4209 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78628D0F8A800CC4209 /* CartModel.swift */; };
 		FC39F78B28D1262D00CC4209 /* CoffeeCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78A28D1262D00CC4209 /* CoffeeCart.swift */; };
 		FC39F78D28D126EB00CC4209 /* ExtensionPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78C28D126EB00CC4209 /* ExtensionPreferenceViewController.swift */; };
-		FC39F78F28D12CA200CC4209 /* ExtensionCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78E28D12CA200CC4209 /* ExtensionCartViewController.swift */; };
 		FC5BCE1328CE01B900DB8F1E /* CoffeHUB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1128CE01B900DB8F1E /* CoffeHUB.xcdatamodeld */; };
 		FC5BCE1528CE027500DB8F1E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */; };
 		FC5BCE1728CE02EF00DB8F1E /* ExtensionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */; };
@@ -65,6 +65,7 @@
 		D136615A28C93EE2000DD186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D136615D28C93EE2000DD186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D136615F28C93EE2000DD186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1451E8C28EDFF5D00CFC7B6 /* Login.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Login.gif; sourceTree = "<group>"; };
 		D16B309128C9524600229B5E /* MenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
 		D16B309428C952EC00229B5E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D16B309628C9557200229B5E /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		FC39F78628D0F8A800CC4209 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		FC39F78A28D1262D00CC4209 /* CoffeeCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCart.swift; sourceTree = "<group>"; };
 		FC39F78C28D126EB00CC4209 /* ExtensionPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPreferenceViewController.swift; sourceTree = "<group>"; };
-		FC39F78E28D12CA200CC4209 /* ExtensionCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCartViewController.swift; sourceTree = "<group>"; };
 		FC5BCE1228CE01B900DB8F1E /* CoffeHUB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeHUB.xcdatamodel; sourceTree = "<group>"; };
 		FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRegisterViewController.swift; sourceTree = "<group>"; };
@@ -209,7 +209,6 @@
 				FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */,
 				FC5BCE1828CE0AC700DB8F1E /* ExtensionLoginViewController.swift */,
 				FC39F78C28D126EB00CC4209 /* ExtensionPreferenceViewController.swift */,
-				FC39F78E28D12CA200CC4209 /* ExtensionCartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -228,6 +227,7 @@
 				D136615A28C93EE2000DD186 /* Assets.xcassets */,
 				D105C47C28D1B92A00CC1730 /* 91070-hot-smiling-coffee-good-morning.gif */,
 				D105C47E28D1B93A00CC1730 /* 65499-drip-coffee.gif */,
+				D1451E8C28EDFF5D00CFC7B6 /* Login.gif */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -316,6 +316,7 @@
 				D105C47D28D1B92A00CC1730 /* 91070-hot-smiling-coffee-good-morning.gif in Resources */,
 				D136615B28C93EE2000DD186 /* Assets.xcassets in Resources */,
 				D105C47F28D1B93A00CC1730 /* 65499-drip-coffee.gif in Resources */,
+				D1451E8D28EDFF5E00CFC7B6 /* Login.gif in Resources */,
 				D1ED9B3A28CC73FD00823328 /* Secound.storyboard in Resources */,
 				D136615928C93EE0000DD186 /* Main.storyboard in Resources */,
 			);
@@ -395,7 +396,6 @@
 				D1DFD60828D0677600472363 /* APICaller.swift in Sources */,
 				D16B309228C9524600229B5E /* MenuTableView.swift in Sources */,
 				FC39F78528D0E84500CC4209 /* LoginResponseModel.swift in Sources */,
-				FC39F78F28D12CA200CC4209 /* ExtensionCartViewController.swift in Sources */,
 				D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */,
 				FC5BCE1528CE027500DB8F1E /* RegisterModel.swift in Sources */,
 				FC39F78328D0E7C800CC4209 /* ProfileData.swift in Sources */,
@@ -552,12 +552,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = T33R9WA623;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoffeHUB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Secound;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -582,12 +582,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = T33R9WA623;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoffeHUB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Secound;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

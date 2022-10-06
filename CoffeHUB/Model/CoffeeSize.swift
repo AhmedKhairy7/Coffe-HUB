@@ -7,10 +7,10 @@
 
 import Foundation
 
-enum CoffeeSize{
-    case large
-    case medium
-    case small
+enum CoffeeSize: String {
+    case large = "large"
+    case medium = "medium"
+    case small = "small"
 }
 
 extension CoffeeSize {

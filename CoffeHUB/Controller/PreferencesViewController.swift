@@ -28,6 +28,8 @@ class PreferencesViewController: UIViewController {
   var manageObjectContext: NSManagedObjectContext!
   var countAddCart = 0
   var countCoffeeChoose = 0
+  var cartNewArray : [CoffeeCart] = []
+  var coreDataCart : [NSManagedObject] = []
   var name = ""
   var mediumPrice = 0
   var image = ""
@@ -205,12 +207,19 @@ class PreferencesViewController: UIViewController {
     print("\(name)\(mediumPrice)")
     let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
-    saveDataofCart(name: name, price: "\(mediumPrice)", totalPrice: totalPriceLabel.text!, countCoffee: countCoffee.text!, image: image)
-      CartData.shared.name = name
-      CartData.shared.price = "\(mediumPrice)"
-      CartData.shared.totalPrice = totalPriceLabel.text!
-      CartData.shared.countCoffee = countCoffee.text!
-      CartData.shared.image = image
+    vc.count = countCoffeeChoose
+    let total = coffeeSize.getTotalPrice(price: Double(mediumPrice), countCoffee: Double(countCoffee.text!)!)
+    vc.total = total
+    vc.price = Double(mediumPrice)
+    fetchDataCart()
+    if cartNewArray.contains(where: {$0.name == name && $0.type == coffeeSize.rawValue}) {
+      updateDataOfCart(name: name, price: "\(mediumPrice)", totalPrice: totalPriceLabel.text!, countCoffee: countCoffee.text!, image: image, type: coffeeSize.rawValue)
+    }else {
+      saveDataofCart(name: name, price: "\(mediumPrice)", totalPrice: totalPriceLabel.text!, countCoffee: countCoffee.text!, image: image, type: coffeeSize.rawValue)
+    }
+    fetchDataCart()
+    vc.coreDataCart = coreDataCart
+    vc.cartNewArray = cartNewArray
     self.navigationController?.pushViewController(vc, animated: true)
   }
 
@@ -218,5 +227,26 @@ class PreferencesViewController: UIViewController {
     self.navigationController?.popViewController(animated: true)
   }
 
+  func fetchDataCart() {
+    cartNewArray.removeAll()
+    let fetchData = NSFetchRequest<NSManagedObject>(entityName: "CartEntity")
+    do{
+      coreDataCart = try manageObjectContext.fetch(fetchData)
+      for item in coreDataCart{
+        let name = item.value(forKey: "name") as! String
+        let price = item.value(forKey: "price") as! String
+        let totalPrice = item.value(forKey: "totalPrice") as! String
+        let countCoffee = item.value(forKey: "countCoffee") as! String
+        let image = item.value(forKey: "image") as! String
+        let type = item.value(forKey: "type") as! String
+        let objectCoffeeCart = CoffeeCart(name: name, type: type, price: price, totalPrice: totalPrice, countCoffee: countCoffee, image: image)
+        cartNewArray.append(objectCoffeeCart)
+      }
+
+    }
+    catch let error as NSError{
+      print(error.localizedDescription)
+    }
+  }
 
 }

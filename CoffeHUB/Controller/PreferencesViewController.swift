@@ -39,12 +39,14 @@ class PreferencesViewController: UIViewController {
   var coffeeSize: CoffeeSize = .small
   var coffeeSugar: CoffeeSugar = .no
   var productArray : [CartModel] = []
-  
+  var price = 0.0
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationController?.isNavigationBarHidden = false
     cartBtnOutlet.cornerRadius()
     setDataFromMenu()
+    price = (Double(mediumPrice) / 2.0)
     totalPriceLabel.text = "\(Double(mediumPrice) / 2.0)"
     appDelegate = UIApplication.shared.delegate as! AppDelegate
     manageObjectContext = appDelegate.persistentContainer.viewContext
@@ -59,6 +61,7 @@ class PreferencesViewController: UIViewController {
 
   private func setTotalPrice(){
     let total = coffeeSize.getTotalPrice(price: Double(mediumPrice), countCoffee: Double(countCoffee.text!)!)
+      
     totalPriceLabel.text = "\(total)"
   }
 
@@ -126,6 +129,7 @@ class PreferencesViewController: UIViewController {
     coffeeSize = .small
     isSelectedSize = !isSelectedSize
     setImageforSmall()
+      price = Double(mediumPrice) / 2.0
     if coffeeSize == .small{
       isSelectedSize = true
       setTotalPrice()
@@ -138,6 +142,7 @@ class PreferencesViewController: UIViewController {
     coffeeSize = .medium
     isSelectedSize = !isSelectedSize
     setImageforMeduim()
+      price = Double(mediumPrice)
     if coffeeSize == .medium{
       isSelectedSize = true
       setTotalPrice()
@@ -148,8 +153,10 @@ class PreferencesViewController: UIViewController {
 
   @IBAction func largeCoffeeBtn(_ sender: UIButton) {
     coffeeSize = .large
+
     isSelectedSize = !isSelectedSize
     setImageforLarge()
+    price = Double(mediumPrice) * 2.0
     if coffeeSize == .large{
       isSelectedSize = true
       setTotalPrice()
@@ -203,19 +210,14 @@ class PreferencesViewController: UIViewController {
   }
 
   @IBAction func addToCart(_ sender: UIButton) {
-    print("tapeed")
-    print("\(name)\(mediumPrice)")
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
-    vc.count = countCoffeeChoose
     let total = coffeeSize.getTotalPrice(price: Double(mediumPrice), countCoffee: Double(countCoffee.text!)!)
-    vc.total = total
-    vc.price = Double(mediumPrice)
     fetchDataCart()
     if cartNewArray.contains(where: {$0.name == name && $0.type == coffeeSize.rawValue}) {
-      updateDataOfCart(name: name, price: "\(mediumPrice)", totalPrice: totalPriceLabel.text!, countCoffee: countCoffee.text!, image: image, type: coffeeSize.rawValue)
+        DatabaseManger.shared.updateDataOfCart(name: name, price: "\(price)", totalPrice: "\(total)", countCoffee: countCoffee.text!, image: image, type: coffeeSize.rawValue)
     }else {
-      saveDataofCart(name: name, price: "\(mediumPrice)", totalPrice: totalPriceLabel.text!, countCoffee: countCoffee.text!, image: image, type: coffeeSize.rawValue)
+        DatabaseManger.shared.saveDataofCart(name: name, price: "\(price)", totalPrice: "\(total)", countCoffee: countCoffee.text!, image: image, type: coffeeSize.rawValue)
     }
     fetchDataCart()
     vc.coreDataCart = coreDataCart

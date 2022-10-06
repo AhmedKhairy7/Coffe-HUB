@@ -14,9 +14,8 @@ enum CoffeeSize: String {
 }
 
 extension CoffeeSize {
-    func getTotalPrice(price: Double, countCoffee: Double) -> Double{
-        switch self{
-            
+    func getTotalPrice(price: Double, countCoffee: Double) -> Double {
+        switch self {
         case .large:
             return price * 2.0 * countCoffee
         case .medium:

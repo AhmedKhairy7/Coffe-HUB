@@ -13,7 +13,7 @@
 		D136615228C93EE0000DD186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136615128C93EE0000DD186 /* AppDelegate.swift */; };
 		D136615428C93EE0000DD186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136615328C93EE0000DD186 /* SceneDelegate.swift */; };
 		D136615628C93EE0000DD186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136615528C93EE0000DD186 /* ViewController.swift */; };
-		D136615928C93EE0000DD186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D136615728C93EE0000DD186 /* Main.storyboard */; };
+		D136615928C93EE0000DD186 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D136615728C93EE0000DD186 /* Auth.storyboard */; };
 		D136615B28C93EE2000DD186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D136615A28C93EE2000DD186 /* Assets.xcassets */; };
 		D136615E28C93EE2000DD186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D136615C28C93EE2000DD186 /* LaunchScreen.storyboard */; };
 		D1451E8D28EDFF5E00CFC7B6 /* Login.gif in Resources */ = {isa = PBXBuildFile; fileRef = D1451E8C28EDFF5D00CFC7B6 /* Login.gif */; };
@@ -29,7 +29,7 @@
 		D1DFD60028CF564600472363 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFD5FF28CF564600472363 /* DropShadow.swift */; };
 		D1DFD60828D0677600472363 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFD60728D0677600472363 /* APICaller.swift */; };
 		D1DFD60A28D067A900472363 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFD60928D067A900472363 /* MenuModel.swift */; };
-		D1ED9B3A28CC73FD00823328 /* Secound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1ED9B3928CC73FD00823328 /* Secound.storyboard */; };
+		D1ED9B3A28CC73FD00823328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1ED9B3928CC73FD00823328 /* Main.storyboard */; };
 		D1ED9B3C28CC91F000823328 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3B28CC91F000823328 /* CartViewController.swift */; };
 		D1ED9B3E28CC926500823328 /* CartTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3D28CC926500823328 /* CartTableView.swift */; };
 		D1ED9B4028CC92BD00823328 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */; };
@@ -39,7 +39,7 @@
 		FC39F78528D0E84500CC4209 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */; };
 		FC39F78728D0F8A800CC4209 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78628D0F8A800CC4209 /* CartModel.swift */; };
 		FC39F78B28D1262D00CC4209 /* CoffeeCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78A28D1262D00CC4209 /* CoffeeCart.swift */; };
-		FC39F78D28D126EB00CC4209 /* ExtensionPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78C28D126EB00CC4209 /* ExtensionPreferenceViewController.swift */; };
+		FC39F78D28D126EB00CC4209 /* DatabaseManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39F78C28D126EB00CC4209 /* DatabaseManger.swift */; };
 		FC5BCE1328CE01B900DB8F1E /* CoffeHUB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1128CE01B900DB8F1E /* CoffeHUB.xcdatamodeld */; };
 		FC5BCE1528CE027500DB8F1E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */; };
 		FC5BCE1728CE02EF00DB8F1E /* ExtensionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */; };
@@ -61,7 +61,7 @@
 		D136615128C93EE0000DD186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D136615328C93EE0000DD186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D136615528C93EE0000DD186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D136615828C93EE0000DD186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D136615828C93EE0000DD186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
 		D136615A28C93EE2000DD186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D136615D28C93EE2000DD186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D136615F28C93EE2000DD186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		D1DFD5FF28CF564600472363 /* DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 		D1DFD60728D0677600472363 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		D1DFD60928D067A900472363 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
-		D1ED9B3928CC73FD00823328 /* Secound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Secound.storyboard; sourceTree = "<group>"; };
+		D1ED9B3928CC73FD00823328 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D1ED9B3B28CC91F000823328 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		D1ED9B3D28CC926500823328 /* CartTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableView.swift; sourceTree = "<group>"; };
 		D1ED9B3F28CC92BD00823328 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		FC39F78428D0E84500CC4209 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		FC39F78628D0F8A800CC4209 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		FC39F78A28D1262D00CC4209 /* CoffeeCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCart.swift; sourceTree = "<group>"; };
-		FC39F78C28D126EB00CC4209 /* ExtensionPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPreferenceViewController.swift; sourceTree = "<group>"; };
+		FC39F78C28D126EB00CC4209 /* DatabaseManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManger.swift; sourceTree = "<group>"; };
 		FC5BCE1228CE01B900DB8F1E /* CoffeHUB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeHUB.xcdatamodel; sourceTree = "<group>"; };
 		FC5BCE1428CE027500DB8F1E /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRegisterViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +156,7 @@
 				D16B309328C9529000229B5E /* Utilities */,
 				D136616728C94FAD000DD186 /* Controller */,
 				D136616628C94FA3000DD186 /* View */,
+				D18F7DC728EEF29E0085D5CC /* StoryBoards */,
 				D18B3A9828D1BB6100D9D847 /* Assets */,
 				D136615F28C93EE2000DD186 /* Info.plist */,
 				D136615328C93EE0000DD186 /* SceneDelegate.swift */,
@@ -185,9 +186,6 @@
 		D136616628C94FA3000DD186 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D136615728C93EE0000DD186 /* Main.storyboard */,
-				D1ED9B3928CC73FD00823328 /* Secound.storyboard */,
-				D136615C28C93EE2000DD186 /* LaunchScreen.storyboard */,
 				D16B309128C9524600229B5E /* MenuTableView.swift */,
 				D16B309628C9557200229B5E /* MenuTableViewCell.swift */,
 				D1ED9B3D28CC926500823328 /* CartTableView.swift */,
@@ -208,7 +206,6 @@
 				FCC13A2828CD20CD00EE6D4D /* PreferencesViewController.swift */,
 				FC5BCE1628CE02EF00DB8F1E /* ExtensionRegisterViewController.swift */,
 				FC5BCE1828CE0AC700DB8F1E /* ExtensionLoginViewController.swift */,
-				FC39F78C28D126EB00CC4209 /* ExtensionPreferenceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +213,7 @@
 		D16B309328C9529000229B5E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FC39F78C28D126EB00CC4209 /* DatabaseManger.swift */,
 				D16B309428C952EC00229B5E /* Utilities.swift */,
 			);
 			path = Utilities;
@@ -230,6 +228,16 @@
 				D1451E8C28EDFF5D00CFC7B6 /* Login.gif */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		D18F7DC728EEF29E0085D5CC /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D136615728C93EE0000DD186 /* Auth.storyboard */,
+				D1ED9B3928CC73FD00823328 /* Main.storyboard */,
+				D136615C28C93EE2000DD186 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 		D1C6814C28CF4A020092FED7 /* Extenstion */ = {
@@ -317,8 +325,8 @@
 				D136615B28C93EE2000DD186 /* Assets.xcassets in Resources */,
 				D105C47F28D1B93A00CC1730 /* 65499-drip-coffee.gif in Resources */,
 				D1451E8D28EDFF5E00CFC7B6 /* Login.gif in Resources */,
-				D1ED9B3A28CC73FD00823328 /* Secound.storyboard in Resources */,
-				D136615928C93EE0000DD186 /* Main.storyboard in Resources */,
+				D1ED9B3A28CC73FD00823328 /* Main.storyboard in Resources */,
+				D136615928C93EE0000DD186 /* Auth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +410,7 @@
 				D16B309528C952EC00229B5E /* Utilities.swift in Sources */,
 				D136615428C93EE0000DD186 /* SceneDelegate.swift in Sources */,
 				FC6E274028CF912B0032706F /* CoffeeSize.swift in Sources */,
-				FC39F78D28D126EB00CC4209 /* ExtensionPreferenceViewController.swift in Sources */,
+				FC39F78D28D126EB00CC4209 /* DatabaseManger.swift in Sources */,
 				FC39F78B28D1262D00CC4209 /* CoffeeCart.swift in Sources */,
 				FC5BCE1328CE01B900DB8F1E /* CoffeHUB.xcdatamodeld in Sources */,
 			);
@@ -411,12 +419,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D136615728C93EE0000DD186 /* Main.storyboard */ = {
+		D136615728C93EE0000DD186 /* Auth.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D136615828C93EE0000DD186 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Auth.storyboard;
 			sourceTree = "<group>";
 		};
 		D136615C28C93EE2000DD186 /* LaunchScreen.storyboard */ = {
@@ -557,7 +565,7 @@
 				INFOPLIST_FILE = CoffeHUB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Secound;
+				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -587,7 +595,7 @@
 				INFOPLIST_FILE = CoffeHUB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Secound;
+				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

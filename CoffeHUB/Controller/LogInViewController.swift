@@ -36,7 +36,7 @@ class LogInViewController: UIViewController {
   }
 
   private func moveTOtabBar(){
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "tabBarID")
     vc.modalPresentationStyle = .fullScreen
     self.navigationController?.pushViewController(vc, animated: true)

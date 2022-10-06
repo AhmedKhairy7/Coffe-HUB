@@ -25,7 +25,7 @@ extension ViewController : TableViewConfig {
   }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Secound", bundle:nil)
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "PreferencesViewController") as! PreferencesViewController
     vc.name = arrMenu[indexPath.row].name
     vc.mediumPrice = arrMenu[indexPath.row].mediumPrice

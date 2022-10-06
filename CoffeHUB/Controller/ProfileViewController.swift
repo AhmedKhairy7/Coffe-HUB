@@ -29,7 +29,7 @@ class ProfileViewController: UIViewController {
   }
 
   @IBAction func logoutButton(_ sender: UIButton) {
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Auth", bundle:nil)
     let vc = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
     self.navigationController?.pushViewController(vc, animated: true)
     deleteAllCoreData()
